@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul>li{
+            float: left;
+            width: 20px;
+            
+            
+        }
+        
+        ul{
+            float: left;
+            width: 100%;
+            list-style: none;
+        }
+        /*
+            li:first-child:nth-last-child(1)
+            Equivalente a coger el primer elemento
+
+
+
+            li:first-child:nth-last-child(4)~li
+            Equivalente a coger a todos los hermanos
+        */   
+        /*
+        li:first-child:nth-last-child(4), li:first-child:nth-last-child(4)~li{
+            background-color: aqua;
+            
+        }
+        */
+        /*
+        00:00
+        
+        li:first-child:nth-last-child(-n+6):nth-last-child(n+2), 
+        li:first-child:nth-last-child(-n+6):nth-last-child(n+2) ~ li{
+            background-color: aqua;
+            
+        }
+        */
+
+
+
+        /*
+            Selecciona los hijos a partir de X siempre que el numero totoal de hijos sea mayor de X 
+            (5 en este caso)
+        */
+        li:first-child:{
+            background: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+
+        <ul>
+            <li>*</li>
+        </ul>
+        <ul>
+            <li>*</li>
+            <li>*</li> 
+        </ul>
+        <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+        </ul>
+        <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+        </ul>
+        <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+        </ul>
+        <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+        </ul>
+        <ul>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+            <li>*</li>
+        </ul>
+
+    </div>
+</body>
+</html>

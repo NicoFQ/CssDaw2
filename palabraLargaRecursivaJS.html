@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            FUNCIONES DE FUNCIONES.
+        */
+        function palabraMasLarga(frase) {
+            
+            frase = frase.split(' ');
+            if (frase.length==1) {
+                return frase[0];
+            }
+            
+            if (frase[0].length >frase[1].length) {
+                frase.splice(1,1);
+                return palabraMasLarga(frase.join(' '));
+            }else{
+                return palabraMasLarga(frase.slice(1).join(' '));
+            }
+            
+        }
+        let cadena = "Esta es una fraseeee muy larga";
+        console.log(palabraMasLarga(cadena));
+
+
+        // split, reverse, join
+        function invertirCadena(cadena) {
+            return cadena.split('').reverse().join('');
+        }
+        console.log(invertirCadena(cadena));
+        function convertirPrimeraMayus(params) {
+
+            let nueva = cadena.split(' ');
+
+            for (let i = 0; i < nueva.length; i++) {
+                nueva[i] = nueva[i].toLowerCase().split('');
+                nueva[i][0] = nueva[i][0].toUpperCase();
+                nueva[i] = nueva[i].join('');
+                
+            }
+            return nueva.join(' ');
+        }
+        console.log(convertirPrimeraMayus(cadena));
+
+        function terminaPor(cadena, termina) {
+                                // negativo, comienza a contar desde atras
+            return cadena.substr(-termina.length) === termina;
+
+        }
+        console.log(terminaPor(cadena, "uy"));
+
+        function repetirCadena(cadena, veces) {
+
+                if(veces <= 0) return ("");
+
+                if (veces === 1) return cadena;
+                else return cadena + repetirCadena(cadena,veces-1);
+            
+        }
+
+        let jo = "jojojojojojojo";
+        console.log(repetirCadena("jo", 3));
+        console.log();
+        console.log('repetirCadena("jo", 3) :', repetirCadena("jo", 3));
+
+
+    </script>
+</body>
+</html>

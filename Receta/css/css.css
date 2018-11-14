@@ -1,0 +1,43 @@
+body{
+	font-size:1em;
+	font-family: https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans;
+	font-family: 'Open Sans', sans-serif;
+}
+/*
+@font-face{
+	font-family: ;
+	src: url('https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans');
+}
+*/
+
+body > header{
+	background-image: url(./../imgs/tarta_manzana.jpg);
+	background-repeat: no-repeat;
+	color: #FFF;
+	height: 35vw;
+	/*background-position: 100%;*/
+	background-size: cover;
+	text-align: center;	
+}
+body > header > h1{
+	padding-top:24vw;
+	font-size: 6vw;
+}
+body > section > article:first-child > ul{
+	padding: 0px;
+	width: 40%;
+	list-style: none;
+	margin: 0 auto;
+}
+
+
+body > section > article:first-child > ul > li{
+	display: inline-block;
+	width: 8em;
+	background-image: url(./../imgs/iconos_v.png);
+	background-repeat: no-repeat;
+}
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    div{
+
+outline: 2px solid black;
+}
+
+div input:indeterminate{
+outline: 2px solid red;
+background-color: gray;
+}
+
+div input:checked{
+outline: 2px solid rgb(37, 44, 37);
+background-color: aqua;
+}
+
+div input:invalid{
+outline: 2px solid red;
+background-color: gray;
+}
+
+div input:valid{
+outline: 2px solid rgb(37, 44, 37);
+background-color: aqua;
+}
+
+div input:required{
+outline: 2px solid rgb(37, 44, 37);
+background-color: blue;
+}
+
+    
+    </style>
+</head>
+<body>
+
+    <div><label for="">Activado<input type="checkbox" ></label></div>
+    <div><label for="">Desactivado<input type="checkbox" checked></label></div>
+    <br><br>
+    <div><label for="">RADIO Activado<input type="radio" ></label></div>
+    <div><label for="">RADIO Desact ivado<input type="radio" checked></label></div>
+    
+    <div><label for="">RADIO Activado<input type="url" value="http://sfsdf.com"></label></div>
+    <div><label for="">RADIO Desact ivado<input type="url" value="-----" required></label></div>
+
+</body>
+</html>

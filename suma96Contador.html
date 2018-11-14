@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: suma;
+        }
+        body div:first-child input:nth-of-type(1):checked{
+            counter-increment: suma 11;
+        }
+        body div:first-child input:nth-of-type(2):checked{
+            counter-increment: suma -18;
+        }
+        body div:first-child input:nth-of-type(3):checked{
+            counter-increment: suma 30;
+        }
+        body div:first-child input:nth-of-type(4):checked{
+            counter-increment: suma 8;
+        }
+        body div:first-child input:nth-of-type(5):checked{
+            counter-increment: suma -5;
+        }
+        body div:first-child span:last-of-type::before{
+            content : " = " counter(suma);
+        }
+        /*
+        body div:first-child input:nth-last-of-type(-n+3):checked {
+            cursor: crosshair;
+        }
+        */
+
+
+       /* body div:first-child input:nth-last-of-type(-n+3):checked::selection ~ span:last-of-type::before{
+            content : "MUY BIEN";
+        }
+        */
+        body div:first-child input:nth-of-type(1):not(:checked) ~
+        input:nth-of-type(2):not(:checked) ~ input:nth-of-type(3):checked ~ input:nth-of-type(4):checked ~ <input:nth-of-type(5):checked ~ span:last-of-type:after{
+            cursor: crosshair;
+        }
+        
+        </style>
+</head>
+    <div>
+            <p>Sumar 33</p>
+        <input id="a" type="checkbox"><label for="a">11</label>
+        <input id="b" type="checkbox"><label for="b">-18</label>
+        <input id="c" type="checkbox"><label for="c">30</label>
+        <input id="d" type="checkbox"><label for="d">8</label>
+        <input id="e" type="checkbox"><label for="e">-5</label>
+        <span>
+
+        </span>
+    </div>
+
+    <div>
+            <p>Sumar 33</p>
+        <input id="a" type="checkbox"><label for="a">11</label>
+        <input id="b" type="checkbox"><label for="b">18</label>
+        <input id="c" type="checkbox"><label for="c">30</label>
+        <input id="d" type="checkbox"><label for="d">8</label>
+        <input id="e" type="checkbox"><label for="e">5</label>
+        <span>
+
+        </span>
+    </div>
+    
+</body>
+</html>

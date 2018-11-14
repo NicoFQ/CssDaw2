@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            counter-reset: total;
+        }
+        /*
+            Display none no cuenta ni reseta.
+        */
+        input{
+            display: none;
+        }
+        input:checked + label{
+            color: red;
+            counter-increment: total;
+            
+        }
+
+        label{
+            border: solid black 1px;
+            padding: 10px;
+        }
+
+        p::after{
+            content: counter(total);
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <input id="a" type="checkbox"><label for="a">64</label>
+        <input id="b" type="checkbox"><label for="b">16</label>
+        <input id="c" type="checkbox"><label for="c">-32</label>
+        <input id="d" type="checkbox"><label for="d">128</label>
+        <input id="e" type="checkbox"><label for="e">4</label>
+        <input id="f" type="checkbox"><label for="f">-8</label>
+        <input id="g" type="checkbox"><label for="g">Item 7</label>
+        <input id="h" type="checkbox"><label for="h">Item 8</label>
+        <input id="i" type="checkbox"><label for="i">Item 9</label>
+        <input id="j" type="checkbox"><label for="j">Item 10</label>
+        
+        <!-- <label><input type="checkbox">Item 2</label>
+        <label>Item 3<input type="checkbox"></label>
+        <label for="b">Item 4</label>
+        <input id="b" type="checkbox">
+        -->
+    </div>
+    <p>
+        Total: 
+    </p>
+</body>
+</html>

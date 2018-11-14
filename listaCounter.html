@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        ul{
+            counter-reset: elemento;
+        }
+    
+        ul li::before{
+            content: counters(elemento, ".", upper-roman) " Item"; /*upper-roman opcional*/
+            counter-increment: elemento;
+        }
+
+
+
+    
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li>
+            <ul>
+                <li></li>
+                <li>
+                    
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li></li>
+            </ul>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

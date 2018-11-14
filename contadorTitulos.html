@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: capitulo;
+        }
+       /* section{
+            
+            counter-reset: titulo;
+            counter-increment: capitulo;
+        }
+        h1{
+            counter-reset: subtitulo;
+            counter-increment: titulo;
+        }
+        
+        h2{
+            counter-reset: subsubtitulo;
+            counter-increment: subtitulo;
+        }
+        
+        h3{
+            counter-increment: subsubtitulo;
+        }*/
+        h1::before{
+            content: counters(capitulo, ".");
+            counter-increment: capitulo;
+
+        }
+        /*
+        h1::before{
+            content: counter(capitulo) "." counter(titulo) " - ";
+        }
+        h2::before{
+            content: counter(capitulo) "." counter(titulo) "." counter(subtitulo);
+        }
+        h3::before{
+            content: counter(capitulo) "." counter(titulo) "." counter(subtitulo) " - " counter(subsubtitulo);
+        }*/
+
+    </style>
+</head>
+<body>
+    <section>
+
+    <h1>Cabecera 1</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, 
+        temporibus autem impedit quia officia eligendi fugit nesciunt 
+        nobis aliquam necessitatibus omnis vitae doloremque aspernatur 
+        ipsa aperiam totam mollitia quibusdam! Illo.
+    </p>
+    <h1>Cabecera 1</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, 
+        temporibus autem impedit quia officia eligendi fugit nesciunt 
+        nobis aliquam necessitatibus omnis vitae doloremque aspernatur 
+        ipsa aperiam totam mollitia quibusdam! Illo.
+    </p>
+    <h2>Cabecera 1</h2>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, 
+        temporibus autem impedit quia officia eligendi fugit nesciunt 
+        nobis aliquam necessitatibus omnis vitae doloremque aspernatur 
+        ipsa aperiam totam mollitia quibusdam! Illo.
+    </p>
+    <h3>Cabecera 1</h3>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, 
+        temporibus autem impedit quia officia eligendi fugit nesciunt 
+        nobis aliquam necessitatibus omnis vitae doloremque aspernatur 
+        ipsa aperiam totam mollitia quibusdam! Illo.
+    </p>
+    <h3>Cabecera 1</h3>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, 
+        temporibus autem impedit quia officia eligendi fugit nesciunt 
+        nobis aliquam necessitatibus omnis vitae doloremque aspernatur 
+        ipsa aperiam totam mollitia quibusdam! Illo.
+    </p>
+
+    </section>
+    <section>
+
+    <h1>Cabecera 1</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, 
+        temporibus autem impedit quia officia eligendi fugit nesciunt 
+        nobis aliquam necessitatibus omnis vitae doloremque aspernatur 
+        ipsa aperiam totam mollitia quibusdam! Illo.
+    </p>
+    <h1>Cabecera 1</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, 
+        temporibus autem impedit quia officia eligendi fugit nesciunt 
+        nobis aliquam necessitatibus omnis vitae doloremque aspernatur 
+        ipsa aperiam totam mollitia quibusdam! Illo.
+    </p>
+    <h2>Cabecera 1</h2>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, 
+        temporibus autem impedit quia officia eligendi fugit nesciunt 
+        nobis aliquam necessitatibus omnis vitae doloremque aspernatur 
+        ipsa aperiam totam mollitia quibusdam! Illo.
+    </p>
+    <h3>Cabecera 1</h3>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, 
+        temporibus autem impedit quia officia eligendi fugit nesciunt 
+        nobis aliquam necessitatibus omnis vitae doloremque aspernatur 
+        ipsa aperiam totam mollitia quibusdam! Illo.
+    </p>
+    <h3>Cabecera 1</h3>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, 
+        temporibus autem impedit quia officia eligendi fugit nesciunt 
+        nobis aliquam necessitatibus omnis vitae doloremque aspernatur 
+        ipsa aperiam totam mollitia quibusdam! Illo.
+    </p>
+
+    </section>
+</body>
+</html>

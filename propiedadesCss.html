@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        :root{
+            --primer-color:black;
+            --segundo-color:gray;
+            --degradado: linear-gradient(var(--primer-color),var(--primer-color));
+            --letras-normal : 20px;
+        }
+
+        body{
+            width: 50px;
+            height: 50px;
+
+            /*background-color: var(--primer-color);*/
+          /*  background-image: linear-gradient(var(--primer-color),var(--segundo-color));
+           */
+        }
+
+        h1{
+            font-size: calc(var(--letras-normal)* 1.1);
+        }
+
+        .alert{
+            --segundo-color:red;
+        }
+
+        p{
+            font-size: calc(var(--letras-normal)* 0.8);
+            color: var(--segundo-color);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Contenido</h1>
+    
+    <div>
+        <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error repudiandae, illum voluptas ipsam odio saepe dolore delectus esse ut at eum quasi sit incidunt ullam numquam architecto accusantium soluta?</p>
+        </div>
+        <div class="alert">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error repudiandae, illum voluptas ipsam odio saepe dolore delectus esse ut at eum quasi sit incidunt ullam numquam architecto accusantium soluta?</p>
+        </div>
+    </div>
+</body>
+</html>
