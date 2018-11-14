@@ -1,0 +1,294 @@
+body{
+   font-family: 'Asap', 'Titillium Web', Verdana, Geneva, sans-serif;
+}
+@font-face{
+    font-family: ADR;
+    src: url(./fonts/ArchitectsDaughter-webfont.ttf), 
+        url(ArchitectsDaughter-webfont.svg),
+        url(ArchitectsDaughter-webfont.woff),
+        url(ArchitectsDaughter-webfont.woff)
+        ;
+}
+body, main, header, section, article, aside, footer{
+    
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    
+    background-color: #fdf9bd;
+    font-family: verdana, geneva,sans-serif;
+    font-size: 16px;
+    
+    
+}
+
+header{
+    
+    text-align: center;
+    
+    
+    
+}
+
+h3{
+    
+    color:#f26521;
+}
+
+h2{
+    
+    color:#ac767b;
+}
+
+header > h1 {
+    
+  line-height: 0;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+/*ARTICULO 1*/
+
+main>section>h2{
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+
+main>section>article>h3{
+    text-transform: uppercase;
+    margin-left: 1%;
+    margin-right: 2%;
+    border-top: orange solid 1px;
+    border-left: orange solid 5px;
+  padding-left: 5%;
+    
+}
+
+
+
+
+main>section>article>h3+p>img{
+    
+    margin-left: 3%;
+   float: left;
+  
+}
+
+main>section>article>h3+p+p{
+    
+   line-height: 1.5;
+    margin: 0 3%;
+}
+
+main>section>article>h3+p+p+p{
+    
+   margin-left: 3%;
+ clear: both;
+}
+
+
+/*ARTICULO 2*/
+
+
+
+
+
+
+header > h2 {
+    font-family: ADR, Verdana, Geneva, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin: 0px;
+    padding: 0px;
+    color:#f26521;
+    letter-spacing: 0.20em;
+    
+}
+
+header>p{
+    
+    font-style: italic;
+
+}
+
+
+/* nav */
+
+body header + nav{
+   margin-top: 20px;
+    background-color: darkviolet;
+   text-align: center; 
+    
+    
+}
+
+body header+ nav ul{
+    
+    list-style: none;
+    height: 45px;
+    margin: 5px;
+}
+
+
+
+body header+ nav li{
+    display: inline-block;
+    margin: 3px;
+    margin-top: 14px;
+    
+}
+
+body header+ nav ul li a{
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    border: solid 1px white;
+    border-radius: 6px;
+    text-transform: uppercase;
+    
+    
+}
+
+
+body header+ nav ul li a:hover{
+    
+color: #f26521;
+}
+
+body header+ nav ul li a:visited, ul li a:active, ul li a:link{
+    
+    color:white;
+}
+
+
+
+
+
+
+
+main{
+    
+    width: 80%;
+    
+    margin: 5% auto;
+   
+}
+
+main > section > article:nth-child(1){
+  margin-top: 2em;
+    
+    
+}
+
+main > section > article:nth-child(2){
+  margin-bottom: 2em;
+    
+    
+}
+
+
+section{
+    border: 3px double orange;
+    margin: 0 5% 0 0;
+    width:65%;
+    float: left;
+    background-color: white;
+    
+    
+}
+
+body  main  section + aside{
+    border-radius: 16px 16px 16px 16px;
+    padding: 0 3% 3% 5%;
+    background-image: url(images/ex-circle-corner.gif);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-color: #ffbc53;
+    width: 30%;
+   float: left;
+    
+}
+
+aside>img{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+}
+
+footer{
+    text-align: center;
+    clear: both;
+    width: 100%;
+    
+    
+    
+}
+body > nav:last-child ul {
+    list-style: none;
+}
+body > nav:last-child ul li{
+    width:20px;
+    height: :20px;
+}
+
+body > nav:last-child {
+    background-color: green;
+}
+
+body > nav:last-child ul li a{
+ background-image: url(./images/tab.png);
+ background-repeat: no-repeat;
+ display: block;
+ height: 24px;
+
+}
+
+body > nav:last-child ul li:nth-child(1) a{ 
+    background-position: 0px -15px;
+}
+body > nav:last-child ul li:nth-child(2) a{
+
+    background-position: 0px -60px;
+}
+body > nav:last-child ul li:nth-child(3) a{
+
+    background-position: 0px -93px;
+}
+body > nav:last-child ul li:nth-child(4) a{
+
+    background-position: 0px -135px;
+}
+
+
+body > nav:last-child ul li:nth-child(1):hover{
+    background-image: url(./images/tab.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+body > nav:last-child ul li:nth-child(2):hover{
+    background-image: url(./images/tab.png);
+    background-repeat: no-repeat;
+    background-position: 0px -30px;
+}
+body > nav:last-child ul li:nth-child(3):hover{
+    background-image: url(./images/tab.png);
+    background-repeat: no-repeat;
+    background-position: 0px -80px;
+}
+body > nav:last-child ul li:nth-child(4):hover{
+    background-image: url(./images/tab.png);
+    background-repeat: no-repeat;
+    background-position: 0px -110px;
+}
