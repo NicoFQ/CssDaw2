@@ -1,0 +1,56 @@
+:root{
+	--alto-de-fila: 30px;
+}
+body{
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 14px;
+	color: #666;
+}
+
+body > section > article > table {
+	border-collapse: collapse;
+	
+}
+
+body > section > article > table > caption{
+	color: brown;
+	font-weight: bold;
+}
+body > section > article > table > thead > tr{
+	background: dimgrey;
+	color:white;
+	height: var(--alto-de-fila);
+}
+body > section > article > table > tbody td{
+	height: var(--alto-de-fila);
+	border: 1px solid;
+}
+
+th:first-of-type{
+	border-radius: 6px 0px 0px 0px;
+}
+
+th:nth-child(7){
+	border-radius: 0px 6px 0px 0px;
+}
+
+
+
+table tr:last-of-type td:last-of-type{
+	
+	border-radius: 0px 0px 10px 0px;
+}
+
+
+/*
+body > section > article > table  td,
+body > section > article > table  th{
+	border: 1px solid black;
+}
+body > section > article > table thead th:first-child{
+	
+	
+	border-radius: 10px 0px 0px;	
+}
+*/
+
