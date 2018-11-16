@@ -1,20 +1,24 @@
+/* Se define un alto de linea para todas las filas */
 :root{
-	--alto-de-fila: 30px;
+	--alto-de-fila: 28px;
 }
+
+/* Se definen propiedades comunes en toda la pagina */
 body{
 	font-family: Helvetica, Arial, Sans-Serif;
 	font-size: 14px;
 	color: #666;
 }
 
+/* Se define la tabla */
 body > section > article > table {
 	border-collapse: collapse;
-	
 }
 
 body > section > article > table > caption{
 	color: brown;
-	font-weight: bold;
+	font-weight: bolder;
+	text-align: left;
 }
 body > section > article > table > thead > tr{
 	background: dimgrey;
@@ -23,34 +27,116 @@ body > section > article > table > thead > tr{
 }
 body > section > article > table > tbody td{
 	height: var(--alto-de-fila);
-	border: 1px solid;
 }
 
-th:first-of-type{
-	border-radius: 6px 0px 0px 0px;
-}
-
-th:nth-child(7){
-	border-radius: 0px 6px 0px 0px;
-}
-
-
-
-table tr:last-of-type td:last-of-type{
-	
-	border-radius: 0px 0px 10px 0px;
-}
-
-
-/*
-body > section > article > table  td,
-body > section > article > table  th{
+td, th{
 	border: 1px solid black;
 }
-body > section > article > table thead th:first-child{
-	
-	
-	border-radius: 10px 0px 0px;	
+
+/*  */
+table > tbody > tr:nth-child(2n+0){
+	background: whitesmoke;
 }
-*/
+
+
+/* Se quita la linea entr nombre y apellido*/
+tr td:nth-child(2), tr th:nth-child(2){
+	border-right: hidden;
+}
+
+
+/* Se alinea la columna matricula */
+tr td:nth-child(1), tr th:nth-child(1){
+	text-align: right;
+	padding-right: .8em;
+	width: 80px;
+}
+
+tr:first-child th:first-child{
+	text-align: left;
+	padding-left: .8em;
+	width: 80px;
+}
+
+/* Se alinea la columna nombre */
+tr td:nth-child(2), tr th:nth-child(2){
+	text-align: left;
+	padding-left: .5em;
+	width: 80px;
+}
+
+
+/* Se alinea la columna apellido */
+tr td:nth-child(3), tr th:nth-child(3){
+	width: 80px;
+}
+
+/* Se alinea la columna primer parcial */
+tr td:nth-child(4), tr th:nth-child(4){
+	text-align: left;
+	padding-left: .8em;
+	width: 140px;
+}
+
+/* Se alinea la columna segundo parcial */
+tr td:nth-child(5), tr th:nth-child(5){
+	text-align: left;
+	padding-left: .8em;
+	width: 160px;
+}
+
+/* Se alinea la columna nota final */
+tr td:nth-child(6), tr th:nth-child(6){
+	text-align: left;
+	padding-left: .8em;
+	width: 100px;
+}
+
+/* Se alinea la columna promociona */
+tr td:nth-child(7), tr th:nth-child(7){
+	text-align: left;
+	padding-left: .8em;
+	width: 100px;
+}
+
+/* Se define el resaltado de filas */
+table>tbody tr:hover{
+	background: lightyellow;
+}
+
+table>tbody tr:hover > td:nth-child(-n+6){
+	color:blue;
+	font-weight: bold;
+}
+
+table>tbody tr:hover > td:nth-child(2):first-letter{
+	font-size: 1.2em;	
+}
+
+table>tbody tr:hover > td:nth-child(3):first-letter{
+	font-size: 1.2em;	
+}
+
+
+
+/* Se define el resaltado de label
+ * cuando checkbox esta checked 
+ */
+input:checked + label{
+	color:red;
+	font-weight: bold;
+}
+
+
+
+
+/* Se define el tfoot */
+table > tfoot > tr td:last-child{
+	text-align: right;
+	border: none;
+}
+table > tfoot > tr td{
+	border: none;
+}
+
 
