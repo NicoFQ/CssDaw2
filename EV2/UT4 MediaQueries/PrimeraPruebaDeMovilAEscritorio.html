@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-escalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prueba 1</title>
+    <style>
+        :root{
+            --bg-header:#ff6663;
+            --bg-nav:#e0ff4f;
+            --bg-main:#fefffe;
+            --bg-aside:#df7ea3;
+            --bg-footer:#310a31;
+            --num-cols: 5;
+            --peso-main: 5;
+        }
+
+        div, header, nav, main, aside, footer{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            border: 1px solid black;
+        }
+        
+        body{
+            font-family: sans-serif;
+        }
+        
+        /* layout */
+        body>div{
+            margin: 0 auto;
+            width: 90%;
+            text-align: center;
+        }
+        
+       
+        
+        /* diseño */
+        
+        header{ background-color: var(--bg-header); }
+        
+
+        nav{
+            background-color: var(--bg-nav);
+        }
+        
+
+        main{
+            background-color: var(--bg-main);
+        }
+        
+
+        aside{
+            background-color: var(--bg-aside);
+        }
+        
+
+        footer{
+            background-color: var(--bg-footer);
+            color: #fefffe
+        }
+        header, footer, nav, aside{
+            height: 10vh;
+        }
+        main, aside{
+            height: 80vh;
+        }
+        @media screen and (min-width:480px){
+            body{
+                --peso-main: 4;
+                font-size: px;
+            }
+
+            main, aside{
+                float: left;
+                /* width: 80%; */
+                width: calc(100% / var(--num-cols) * var(--peso-main));
+            }
+            
+            footer{
+                clear: both;
+            }
+
+            aside{
+                height: 80vh;
+                width: calc(100% / var(--num-cols));
+                /* width: 20%; */
+            }
+        }
+        @media screen and (min-width:720px){
+            body{
+                --peso-main : 3;
+                font-size:px; 
+            }
+            nav{
+                float: left;
+                width: calc(100% / var(--num-cols) * var(--peso-main));
+                /*width: 20%;*/
+            }
+            main{
+                width: calc(100% / var(--num-cols));
+               /* width: 60%;*/
+            } 
+            nav{
+                height: 80vh;
+            }
+        }
+        @media screen and (min-width:900px){
+            body > div{
+                width: 900px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <header><h3>HEADER</h3></header>
+        <nav><h3>NAV</h3></nav>
+        <main><h3>SECTION</h3></main>
+        <aside><h3>ASIDE</h3></aside>
+        <footer><h3>FOOTER</h3></footer>
+    </div>
+</body>
+</html>
