@@ -1,0 +1,148 @@
+/*==================================*/
+/* GENERAL/default */
+/*==================================*/
+body,main,header,section,article,nav,aside,footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /*Al estar en el HTML, no sera escalable para el usuario
+    tanto em, como rem son porcentajes*/
+    font-size: 16px; /*1rem*/
+}
+body{
+    font-family: Verdana, Geneva,sans-serif;
+    background-color: #fdf9bd;
+    font-size: 16px; /*son em, por que esta en el body (1em)*/
+}
+/*==================================*/
+/* nav */
+/*==================================*/
+nav{
+    background-color: #751c54;
+}
+nav>ul{
+    list-style-type: none;
+    padding: 0;
+    margin:0 auto;
+    width: 40em;/*Ancho de 30 letras*/
+}
+nav>ul>li{
+    display: inline-block;
+    padding: 20px;
+    margin:0;
+}
+nav>ul>li>a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 6px;
+    /*margin: 0 -7px;*//*idk*/
+    padding: 10px;
+}
+/*==================================*/
+/* Section */
+/*==================================*/
+section{
+    border:double 4px orange;
+    margin-top: 20px;
+}
+section>h2{
+    text-align: center;
+    color: #751c54;
+    margin-bottom: .5em;
+}
+section>article>h3{
+    color: orange;
+    border-top: solid;
+    border-top-width: 1px;
+    border-left: solid;
+    border-left-width: 4px;
+    padding: 0 15px;
+    margin: 10px;
+}
+/*imagenes*/
+section>article>p>img{
+    float: left;
+    margin:0 10px;
+    /*width: 300px;*/
+}
+/*segundos elementos p dentro del article*/
+section>article>p:nth-of-type(2){
+    margin:0px 10px;
+    line-height: 1.30;
+    /*line-height: 1.96;*/
+}
+/*enlaces a, hijos de article*/
+section>article>p:nth-of-type(3)>a{
+    margin: 0px 10px;
+}
+/*==================================*/
+/* Aside */
+/*==================================*/
+aside{
+    margin-top: 20px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-image: url(./images/ex-circle-corner.gif);
+    background-repeat: no-repeat;
+}
+aside>h2{
+    color: #f26521;
+}
+/*==================================*/
+/* header */
+/*==================================*/
+/*Esta centrando el contenido, por eso se puede usar text-align.*/
+header{
+    text-align: center;
+}
+header>h2{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-top: 0px;
+    letter-spacing: .2em;
+    color: #f26521;
+}
+header>p{
+    font-style: italic;
+}
+header>h1{
+    margin-bottom: 0px;
+    line-height: 1;/*Si se pone 0, se comeria al texto de arriba*/
+}
+/*==================================*/
+/* layout */
+/*==================================*/
+/*Se pone el width se pone a una medida fija/responsive.
+Tener en cuenta que el contenido debe medir repartido entre sus elementos*/
+/*RESPETAR SIEMPRE ESTE CODIGO, UNA VEZ SE POSICIONE, NO SE TOCA, SOLO SE 
+REPITE LA RUTA PARA MODIFICAR, PERO EL CODIGO DE ABAJO YA NO SE TOCARA, PARA NO JODERLO*/
+main{
+    width: 78%;
+    margin: 0px auto;
+}
+main>section{
+    background-color: white;
+    float: left;
+    width: 65%;
+    margin-right: 5%;
+}
+main>aside{
+    float: left;
+    width: 30%;
+    background-color: #ffbc53;
+}
+/*==================================*/
+/* footer */
+/*==================================*/
+footer{
+    clear: both;
+}
+footer>p:nth-child(2){
+    top: -33px;
+    position: relative;
+    text-align: center;
+}

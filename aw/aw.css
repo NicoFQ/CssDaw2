@@ -1,0 +1,176 @@
+body, main, header, section, article, nav, aside, footer, ul, li{
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+html{
+	font-size: 16px;
+}
+body{
+	font-family: Arial;
+	background-color:#fdf9bd;
+	font-size:16px;
+}
+
+body > header {
+	text-align: center;
+}
+
+body > nav:first-of-type > ul{
+	width: 100%;
+	text-align: center;
+	background: purple;
+	height: 3.5em;
+	padding-top: .7em;
+}
+
+body > nav:first-of-type > ul > li {
+	display: inline-block;
+	border: 1px solid white;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+}
+body > nav > ul > li a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px;
+	color:white;
+}
+
+body > nav > ul > li {
+	margin: 0 0.5em;
+	text-transform: uppercase;
+}
+
+body > main {
+	margin: 0 auto;
+	width: 80%;
+}
+
+body > main > section{
+	width: 68%;
+	border: 5px double orange;
+	padding: 0.8em;
+	display: inline-block;
+	background-color: white;
+	/*float: right;*/
+}
+
+body > main > section h2{
+	text-align: center;
+}
+
+body > main > section > article{
+	clear: both;
+}
+
+body > main > section> article > p img{
+	width: 280px;
+	height: 150px;
+}
+
+body > main > section> article p img{
+	float: left;
+}
+
+body > main > section> article > h3:first-child{
+	border-left: 2px solid orange;
+	border-top: 1px solid orange;
+	padding-left: 1em;
+}
+
+
+body > main > aside{
+	/*float: left;*/
+	vertical-align: top;
+	width: 29%;
+	display: inline-block;
+	background:orange url(./images/ex-circle-corner.gif);
+	background-repeat: no-repeat;
+	margin-left: 1em;
+	padding: 1.3em .7em 1em 4em;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
+}
+
+body > footer{
+	text-align: center;
+	clear:both;
+}
+
+body >nav:last-child ul li a{
+	background-image: url("./images/tab.png");
+	width: 15px;
+	height: 7px;
+	display: inline-block;	
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-top: .5em;
+}
+
+body >nav:last-child ul li:first-child a:hover{
+	background-position-y: -18px;
+}
+
+body >nav:last-child ul li:nth-child(2) a{
+	height: 14px;
+	background-position-y: -39px;
+}
+body >nav:last-child ul li:nth-child(2) a:hover{
+	height: 14px;
+	background-position-y: -68px;
+}
+
+body >nav:last-child ul li:nth-child(3) a{
+	height: 5px;
+	background-position-y: -97px;
+}
+body >nav:last-child ul li:nth-child(3) a:hover{
+	height: 5px;
+	background-position-y: -114px;
+}
+body >nav:last-child ul li:nth-child(4) a{
+	height: 12px;
+	background-position-y: -134px;
+}
+body >nav:last-child ul li:nth-child(4) a:hover{
+	height: 12px;
+	background-position-y: -163px;
+}
+
+
+body >nav:last-child >ul{
+	background-image: linear-gradient(tomato, red);
+	display: block;
+	width: 45px;
+	height: 150px;
+	list-style: none;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	position: fixed;
+	top: 300px;
+	right: -30px;
+	border: 2px solid white;
+    box-shadow: -2px -1px 20px black;
+	
+}
+
+body >nav:last-child >ul:hover{
+	background-image: linear-gradient(tomato, red);
+	display: block;
+	width: 45px;
+	height: 150px;
+	list-style: none;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	position: fixed;
+	top: 300px;
+	right: 0px;
+	border: 2px solid white;
+    box-shadow: inset -2px -1px 20px black;
+}
+
+
+

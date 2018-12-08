@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contador Checkboxes</title>
+	<style>
+
+		body {
+			font-family: Helvetica, sans-serif;
+		}
+		div {
+			counter-reset: suma;
+		}
+		input {
+			visibility: hidden;
+		}
+		label {
+			display: inline-block;
+			box-sizing: border-box;
+			padding: 10px;
+			width: 90px;
+			height: 40px;
+			border: 2px solid grey;
+			border-radius: 9px;
+			text-align: center;
+		}
+
+		input:nth-of-type(2):checked { counter-increment: suma 64; }
+		input:nth-of-type(4):checked { counter-increment: suma 16; }
+		input:nth-of-type(5):checked { counter-increment: suma -32;	}
+		input:nth-of-type(6):checked { counter-increment: suma 128;	}
+		input:nth-of-type(8):checked { counter-increment: suma 4; }
+		input:nth-of-type(9):checked { counter-increment: suma -8; }
+
+		input:checked + label {
+			background-color: lightgrey;
+		}
+		p {
+			text-align: center;
+		}
+		p:last-of-type::before {
+			content: "SUMA = " counter(suma);
+		}
+
+		  input:not(:checked) /* el primero de los input:not(:checked) 0 */
+		~ input:not(:checked) /* al menos 1 hermano input:not(:checked) 1 */
+		~ input:not(:checked) /* al menos 2 hermano input:not(:checked) 1 + 1 */
+		~ input:not(:checked) /* al menos 3 hermanos input:not(:checked) 1 + 1 + 1 */
+		~ input:checked /* al menos 1 hermano input:checked 1 */
+		~ input:checked /* al menos 2 hermanos input:checked 1 + 1 */
+		~ input:not(:checked) /* al menos 1 hermano input:not(:checked) 1 */
+		~ input:checked /* al menos 3 hermanos input:checked 1 + 1 + 1 */
+		~ input:checked /* al menos 4 hermanos input:checked 1 + 1 + 1 + 1 */
+		~ input:not(:checked) /* al menos 1 hermano input:not(:checked) 1 */
+
+		~ p:last-of-type::after 
+		{
+			content: " ¡PERFECTO!";
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<p>CONSIGUE UNA SUMA DE 92</p>
+
+		<input id="gg" type="checkbox">
+		<label for="gg">WW</label>
+
+		<input id="a" type="checkbox">
+		<label for="a">64</label>
+
+		<input id="hh" type="checkbox">
+		<label for="hh">XX</label>
+
+		<input id="b" type="checkbox">
+		<label for="b">16</label>
+
+		<input id="c" type="checkbox">
+		<label for="c">-32</label>
+
+		<input id="d" type="checkbox">
+		<label for="d">128</label>
+
+		<input id="ii" type="checkbox">
+		<label for="ii">YY</label>
+
+		<input id="e" type="checkbox">
+		<label for="e">4</label>
+
+		<input id="f" type="checkbox">
+		<label for="f">-8</label>
+
+		<input id="jj" type="checkbox">
+		<label for="jj">ZZ</label>
+
+		<p></p>
+	</div>
+
+	<!-- NO SE PUEDEN USAR ESTOS PORQUE NO SE PUEDEN SELECCINAR LOS PADRES
+	<label for="b">Item 2</label><input id="b" type="checkbox">
+	<label><input type="checkbox">Item 3</label>
+	<label>Item 4<input type="checkbox"></label> -->
+</body>
+</html>

@@ -1,0 +1,21 @@
+body{width: 650px;	margin: 0 auto;}
+header{height: 200px;	background: #000;	text-align:center;	line-height: 2.5em;}
+header a {color:white;}
+a{text-decoration: none;	border-bottom: 1px dotted;}
+a:hover{border-bottom: 1px solid;}
+ul{list-style: none;}
+header > nav > ul > li{display:inline-block;	margin: 0 0.7em;}
+header > h1, header > h4 {color :white;}
+header > h1{color :white;padding-top: 0.5em;}
+article > hgroup h2{float: left;}
+article > hgroup h3{float: right;}
+article > section > p{clear:both;}
+article > section > p{	line-height: 1.8em;}
+dt{border: 1px solid;	font-weight: bold;	width: 100px;	text-align: right;	display: inline;	margin: 0;	padding: 0;}
+section > ul:first-child > li > ul li:first-child{display:block;	font-weight: bold;}
+section > ul:first-child > li > ul li {display:block;	line-height: 1.5em;}
+section > ul:first-child li > ul li span:first-child{font-weight: bold;	text-align: right;	display: inline-block;	width: 80px;}
+section > ul:first-child li > ul> li a{margin-left: 1.5em;}
+footer{text-align:center;}
+footer span:first-child:before{display: block;	content:"f";	text-align:center;	margin: 2.5em 0;}
+section ul{padding-left: 0px;}

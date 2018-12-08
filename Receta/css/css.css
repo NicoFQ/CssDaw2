@@ -3,6 +3,7 @@ body{
 	font-family: https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans;
 	font-family: 'Open Sans', sans-serif;
 }
+
 /*
 @font-face{
 	font-family: ;
@@ -19,25 +20,115 @@ body > header{
 	background-size: cover;
 	text-align: center;	
 }
+
+body > section > article ol,
+body > section > article ul{
+	color: silver;
+	
+}
+
 body > header > h1{
 	padding-top:24vw;
 	font-size: 6vw;
 }
+
 body > section > article:first-child > ul{
 	padding: 0px;
 	width: 40%;
 	list-style: none;
-	margin: 0 auto;
+	margin: 0 auto 1em;
 }
 
 
 body > section > article:first-child > ul > li{
 	display: inline-block;
-	width: 8em;
+	width: 9em;
 	background-image: url(./../imgs/iconos_v.png);
 	background-repeat: no-repeat;
+	height:2em;
+	background-size: 2em;
 }
 
 
+
+body > section > article:first-child > ul > li  span{
+	margin-top: 0.2em;
+	display: block;
+}
+
+li > span {
+	color:black;
+	font-weight: bold;
+}
+
+
+body > section > article:first-child > ul > li:nth-child(1){
+	background-position: 90px 0px;
+}
+body > section > article:first-child > ul > li:nth-child(2){
+	background-position: 90px -31px;
+}
+body > section > article:first-child > ul > li:nth-child(3){
+	background-position: 90px -63px;
+
+}
+
+body > section > article:nth-child(-n+2){
+	border-bottom: solid black;
+}
+
+
+/*
+/html/body/section/article[2]/ul[2]
+<span>Cocinado 1 h</span>
+body > section > article:nth-child(2) > ul:nth-child(3) > li:nth-child(2) > span
+*/
+
+body > section > article:nth-child(2) > ul:nth-child(3){
+	padding: 0px;
+	width: 19em;
+	list-style: none;
+	margin: 0 auto 1em;
+}
+
+body > section > article:nth-child(2) > ul:nth-child(3) > li{
+	display: inline-block;
+	width: 9em;
+	height:3.5em;
+	display:hidden;
+}
+
+body > section > article:nth-child(2) > ul:nth-child(3) > li:nth-child(1){
+	background-image: url(./../imgs/iconos_v.png);
+	background-repeat: no-repeat;
+	background-size: 3.5em;
+	background-position: 0 0px ;
+	padding-left: 4em;
+}
+
+body > section > article:nth-child(2) > ul:nth-child(3) > li  span{
+	display: inline-block;	
+}
+
+
+body > section > article:nth-child(2) > ul:nth-child(3) > li:nth-child(1){
+	width: 64px;
+}
+
+body > section > article:nth-child(2) > ul:nth-child(3) > li:nth-child(2){
+	width: 80px;
+}
+body > section > article:nth-child(2) > ul:nth-child(3) > li:nth-child(3){
+	width: 80px;
+}
+
+
+body > section > article:nth-child(2) > ul:nth-child(3) > li:nth-child(1) > span{
+	width: 46px;
+}
+
+body > section > article:nth-child(2) > ul:nth-child(3) > li:nth-child(2) > span > span:nth-child(2){
+	margin-left: 20px;
+}
 
 

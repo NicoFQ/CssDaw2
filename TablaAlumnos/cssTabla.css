@@ -12,8 +12,39 @@ body{
 
 /* Se define la tabla */
 body > section > article > table {
-	border-collapse: collapse;
+	border-collapse: separate;
+	border-spacing:0px;
 }
+
+table tbody tr td{
+	border-left: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
+
+table tbody tr:last-child td{
+	border-bottom: 1px solid lightgrey;
+}
+
+table tbody tr td:last-child{
+	border-right: 1px solid lightgrey;
+}
+
+table thead tr:first-child th:first-child{
+	border-top-left-radius: 6px;
+}
+
+table thead tr:first-child th:last-child{
+	border-top-right-radius: 6px;
+}
+
+table tbody tr:last-child td:first-child{
+	border-bottom-left-radius: 6px;
+}
+
+table tbody tr:last-child td:last-child{
+	border-bottom-right-radius: 6px;
+}
+
 
 body > section > article > table > caption{
 	color: brown;
@@ -21,6 +52,7 @@ body > section > article > table > caption{
 	text-align: left;
 }
 body > section > article > table > thead > tr{
+	border-collapse: collapse;
 	background: dimgrey;
 	color:white;
 	height: var(--alto-de-fila);
@@ -29,19 +61,16 @@ body > section > article > table > tbody td{
 	height: var(--alto-de-fila);
 }
 
-td, th{
-	border: 1px solid black;
-}
 
-/*  */
+/* Se resalta el fondo de la filas pares */
 table > tbody > tr:nth-child(2n+0){
 	background: whitesmoke;
 }
 
 
 /* Se quita la linea entr nombre y apellido*/
-tr td:nth-child(2), tr th:nth-child(2){
-	border-right: hidden;
+tr td:nth-child(3), tr th:nth-child(3){
+	border-left: none;
 }
 
 
@@ -138,5 +167,8 @@ table > tfoot > tr td:last-child{
 table > tfoot > tr td{
 	border: none;
 }
+
+
+
 
 

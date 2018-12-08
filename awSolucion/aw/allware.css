@@ -1,0 +1,254 @@
+@font-face{
+    font-family: ADR;
+    /*src:url(./fonts/ArchitectsDaughter-webfont.eot) format('embedded-opentype'),
+    url(./fonts/ArchitectstDaughter-webfont.eot) format('eot');*/
+    src:url(./fonts/ArchitectsDaughter-webfont.svg) format('svg');
+    /*src:url(./fonts/ArchitectstDaughter-webfont.svg) format('svg');*/
+    /*src:url(./fonts/ArchitectstDaughter-webfont.woff) format('woff');*/
+}
+/*==================================*/
+/* GENERAL/default */
+/*==================================*/
+body,main,header,section,article,nav,aside,footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /*Al estar en el HTML, no sera escalable para el usuario
+    tanto em, como rem son porcentajes*/
+    font-size: 16px; /*1rem*/
+}
+body{
+    /*font-family: asap,Titillium,Verdana, Geneva,sans-serif;*/
+    font-family: ADR;
+    /*font-family: asap;*/
+    background-color: #fdf9bd;
+    font-size: 16px; /*son em, por que esta en el body (1em)*/
+}
+/*==================================*/
+/* nav */
+/*==================================*/
+nav{
+    background-color: #751c54;
+    margin-bottom: 2em;
+}
+nav>ul{
+    list-style-type: none;
+    padding: 0.5em; /*Se pone el padding al ul para poder separar los valores del interior*/
+    margin:0 auto;
+    text-align: center;
+}
+nav>ul>li{
+    display: inline-block;
+    margin-right: 0.5em; /*Separacion derecha de las cajas de li, que tendra heredan a "A"*/
+    padding: 0;
+    
+}
+nav>ul>li>a{
+    display: block;
+    padding: 0.5em;
+    text-transform: uppercase;
+    border:1px solid #ba89a8;
+    border-radius: .25em;
+    text-decoration: none;
+    color:white;
+}
+/*==================================*/
+/* header */
+/*==================================*/
+/*Esta centrando el contenido, por eso se puede usar text-align.*/
+header{
+    text-align: center;
+}
+header>h2{
+    text-transform: uppercase;
+    /*font-size: 1.2em;*/
+    font-size: 2.2em;
+    margin-top: 0px;
+    letter-spacing: .2em;
+    color: #f26521;
+    font-family: ADR,Verdana,Genova, sans-serif;
+}
+header>p{
+    font-style: italic;
+}
+header>h1{
+    margin-bottom: 0px;
+    line-height: 1;/*Si se pone 0, se comeria al texto de arriba*/
+}
+/*==================================*/
+/* MAIN */
+/*==================================*/
+main > section{
+    background-color: white;
+    border:double 5px #ffbc53;
+    padding: 1em .5em;
+}
+/*Regla que evitara que se suban las imagenes cuando
+la pantalla sea demasiado grande*/
+main>section>article{
+    clear:both;
+}
+main>section>h2{
+    color:#ac767b;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+main>section>article>h3{
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #f26521;
+    border-top: 1px solid;
+    border-left: 2px solid;
+    padding-left: 1em;
+} 
+/*mio*/
+/*main > section > article > p:nth-of-type(1)>img{
+    float: left;
+    }*/
+    /*Se flota la "p" por que en su interior tiene la imagen, al flotar la p no afectara la imagen, pero si flotara la P y el texto de la segunda P se subira al lado de la primera P, que tiene una imagen*/
+    main > section > article > p:first-of-type{
+        float: left;
+        /*padding: .5em .2em;*//*mio, tiene mas estilo*/
+        margin-top: 0;
+        margin-right: 10px;
+    }
+    /*==================================*/
+    /* main->aside */
+    /*==================================*/
+    main>aside{
+        padding: 1em;
+        padding-left: 4em;
+        border-radius: 1.2em;
+        background-image: url(./images/ex-circle-corner.gif);
+        background-repeat: no-repeat;
+        background-color: #ffbc53;
+    }
+    main>aside>h2{
+        font-size: 1em;
+        text-transform: uppercase;
+        color:#f26521;
+        letter-spacing: 3px;
+    }
+    main>aside>p{
+        font-size: .8em;
+        color: #633;
+        line-height: 1.5;
+    }
+    /*==================================*/
+    /* footer */
+    /*==================================*/
+    footer{
+        text-align: center;
+        margin-top: -60px;
+    }
+    /*==================================*/
+    /* layout/posicionamiento */
+    /*==================================*/
+/*Se pone el width se pone a una medida fija/responsive.
+Tener en cuenta que el contenido debe medir repartido entre sus elementos*/
+/*RESPETAR SIEMPRE ESTE CODIGO, UNA VEZ SE POSICIONE, NO SE TOCA, SOLO SE 
+REPITE LA RUTA PARA MODIFICAR, PERO EL CODIGO DE ABAJO YA NO SE TOCARA, PARA NO JODERLO*/
+/*==================================*/
+/* POSICIONAMIENTO */
+/*==================================*/
+main{
+    width: 78%;
+    margin: 0px auto;
+}
+main>section{
+    float: left;
+    width: 65%;
+    margin-right: 5%;
+}
+main>aside{
+    float: left;
+    width: 30%;
+}
+/*==================================*/
+/* footer */
+/*==================================*/
+footer{
+    clear: both;
+}
+
+/*==================================*/
+/* IMAGENES DEL NAV DERECHO */
+/*==================================*/
+body:last-child>nav:nth-of-type(2)>ul{
+    width: 2.5em;
+    float: right;
+    position: fixed;
+    top:200px;
+    right:0;
+    display: block;
+    background-image: linear-gradient(to bottom, darkred, red);   
+    border:none;
+    opacity: .9;
+    border:2px solid white;
+    border-top-left-radius:.6em;
+    border-bottom-left-radius:.6em;
+    box-shadow: 0 0 .5em;
+}
+body:last-child>nav:nth-of-type(2)>ul>li{
+    width: 2em;
+    height: 1.3em;
+    margin:.2em;
+}
+body:last-child>nav:nth-of-type(2)>ul>li>a{
+    border-radius: 0;
+    border:none;
+}
+body:last-child>nav:nth-of-type(2)>ul>li{
+    background-image: url(./images/tab.png);
+    background-repeat: no-repeat;
+}
+/*imagen correo*/
+body:last-child>nav:nth-of-type(2)>ul>li:nth-of-type(1){
+    background-size: 30px;
+}
+body:last-child>nav:nth-of-type(2)>ul>li:nth-of-type(1):hover{
+    background-position: 0px -20px;
+}
+/*imagen red*/
+body:last-child>nav:nth-of-type(2)>ul>li:nth-of-type(2){
+    background-size: 30px;
+    height: 1.8em;
+    background-position: 0 -40px;
+}
+body:last-child>nav:nth-of-type(2)>ul>li:nth-of-type(2):hover{
+    background-position: 5px;
+    background-position: 0 -69px;
+}
+/*imagen twitter*/
+body:last-child>nav:nth-of-type(2)>ul>li:nth-of-type(3){
+    background-size: 30px;
+	background-position: 0 -100px;
+	height: 1.2em;
+}
+body:last-child>nav:nth-of-type(2)>ul>li:nth-of-type(3):hover{
+    background-position: 0 -118.2px;
+}
+/*imagen facebook*/
+body:last-child > nav:nth-of-type(2) > ul > li:nth-of-type(4) {
+	background-size: 30px;
+	background-position: 0px -138px;
+	height: 1.8em;
+}
+body:last-child>nav:nth-of-type(2)>ul>li:nth-of-type(4):hover{
+    background-position: 0px -168px;
+}
+/*==================================*/
+/* IMAGEN PREMIO */
+/*==================================*/
+body>aside{
+	background-image: url(./images/premio.png);
+	background-repeat: no-repeat;
+	height: 10em;
+	width: 15em;
+	top:0;
+	position: absolute;
+	z-index: -1; /*bien?*/
+}

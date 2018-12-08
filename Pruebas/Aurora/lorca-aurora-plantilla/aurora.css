@@ -1,0 +1,15 @@
+@font-face{
+	font-family: foo;
+	src: url(fonts/caveat.woff2);
+	
+}
+
+body{
+	background: tomato;
+	font-family: foo;
+}
+
+body > h1 {
+	font-family: "OCR A Extended", arial;
+	text-shadow: 3px -3px 1px white;
+}
