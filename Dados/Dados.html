@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<style type="text/css">
+		.dado{
+			border: solid 3px #aaa;
+			border-radius: 3px;
+			display: block;
+			width: 100px;
+			height: 100px;
+			margin: 7px;
+			box-sizing: border-box;
+			padding: 10px;
+			position: relative;
+		}
+		.dado .punto {
+			border-radius: 50%;
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			background-color: red;
+			box-shadow: inset -1px -1px 3px 0px #0000008c;
+		}
+		/* DADO 1 */
+		.dado:nth-child(1) .punto{
+			top: 0;
+			bottom: 0;
+			right:  0;
+			left: 0;
+			margin: auto ;
+		} 
+		/* DADO 2 */
+		.dado:nth-child(2) .punto:first-child{
+			top: 15px;
+			left: 15px;
+		}
+
+		.dado:nth-child(2) .punto:last-child{
+			bottom: 15px;
+			right:  15px;
+		}
+		/* DADO 3*/
+		.dado:nth-child(3) .punto:nth-child(2){
+			top: 0;
+			bottom: 0;
+			right:  0;
+			left: 0;
+			margin: auto;
+		} 
+		.dado:nth-child(3) .punto:first-child{
+			top: 15px;
+			left: 15px;
+		}
+
+		.dado:nth-child(3) .punto:last-child{
+			bottom: 15px;
+			right:  15px;
+		}
+		/* DADO 4 */
+
+		.dado:nth-child(4) .punto:first-child{
+			top: 15px;
+			left: 15px;
+		}
+
+		.dado:nth-child(4) .punto:nth-child(2){
+			top: 15px;
+			right:  15px;
+		}
+		.dado:nth-child(4) .punto:nth-child(3){
+			bottom:  15px;
+			left: 15px;
+		}
+
+		.dado:nth-child(4) .punto:last-child{
+			bottom: 15px;
+			right:  15px;
+		}
+
+		/* DADO 5 */
+
+		.dado:nth-child(5) .punto:first-child{
+			top: 15px;
+			left: 15px;
+		}
+
+		.dado:nth-child(5) .punto:nth-child(2){
+			top: 15px;
+			right:  15px;
+		}
+		.dado:nth-child(5) .punto:nth-child(3){
+			bottom: 15px;
+			left: 15px;
+		}
+
+		.dado:nth-child(5) .punto:nth-child(4){
+			bottom: 15px;
+			right:  15px;
+		}
+		.dado:nth-child(5) .punto:last-child{
+			top: 0;
+			bottom: 0;
+			right:  0;
+			left: 0;
+			margin: auto;
+		} 
+
+		/* DADO 6 */
+
+		.dado:nth-child(6) .punto:first-child{
+			top: 15px;
+			left: 15px;
+		}
+
+		.dado:nth-child(6) .punto:nth-child(2){
+			top: 15px;
+			right:  15px;
+		}
+		.dado:nth-child(6) .punto:nth-child(3){
+			bottom: 15px;
+			left: 15px;
+		}
+
+		.dado:nth-child(6) .punto:nth-child(4){
+			bottom: 15px;
+			right:  15px;
+		}
+		.dado:nth-child(6) .punto:nth-child(5){
+			top:0px;
+			bottom: 0px;
+			left: 15px;
+			margin: auto 0;
+		}
+
+		.dado:nth-child(6) .punto:nth-child(6){
+			top:0px;
+			bottom: 0px;
+			right: 15px;
+			margin: auto 0;
+		}
+
+
+	</style>
+</head>
+<body>
+<main>
+	<div class="dado">
+		<div class=punto></div>
+	</div>
+	<div class="dado">
+		<div class=punto></div>
+		<div class=punto></div>
+	</div>
+	<div class="dado">
+		<div class=punto></div>
+		<div class=punto></div>
+		<div class=punto></div>
+	</div>
+	<div class="dado">
+		<div class=punto></div>
+		<div class=punto></div>
+		<div class=punto></div>
+		<div class=punto></div>
+	</div>
+	<div class="dado">
+		<div class=punto></div>
+		<div class=punto></div>
+		<div class=punto></div>
+		<div class=punto></div>
+		<div class=punto></div>
+	</div>
+	<div class="dado">
+		<div class=punto></div>
+		<div class=punto></div>
+		<div class=punto></div>
+		<div class=punto></div>
+		<div class=punto></div>
+		<div class=punto></div>
+	</div>
+</main>
+</body>
+</html>

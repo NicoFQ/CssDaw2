@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Spectral+SC:400,700');
+
+/**Reset*/
+div, header, main, footer,section, nav, article, figure, h1, h2, h3, h4, h5, h6, ul, li, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Las imagenes y los iframes no son responsive */
+img, iframe{
+    width: 100%; 
+    height: auto;
+}
+:root{
+    --tam-ancho-social: -40px;
+    --tam-alto-social: -40px;
+}
+
+body{
+    font: normal 14px/1.2 'Open Sans', sans-serif;
+    font-weight:400;
+    color : #333;
+}
+
+/* DISTRIBUCION */
+body>div{
+    width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Cabecera */
+body>div>header{
+    float:left;
+}
+
+/* Contenido */
+body>div>main{
+    float: left;
+    width: 80%;
+}
+body>div>main>section article{
+    float: left;
+    width: 33.33%;
+}
+
+/* Footer */
+body>div>footer{
+    float: right;
+    width: 81%;
+}
+
+body>div>footer>div{
+    float: left;
+    width: 50%;
+}
+
+
+
+/* Diseño *//* Diseño *//* Diseño *//* Diseño */
+
+/** Figure */
+body > div > main > figure > figcaption{
+    font-size: 20.3px;
+    background: #0517bb;
+    padding: 1em;
+    color: white;
+}
+
+body > div > main>section:first-of-type{
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+    font-style: italic;
+}
+body > div > main > section:last-of-type{
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+    font-style: italic;
+    overflow: hidden;
+}
+body>div>main>section:nth-of-type(2) article{ 
+    padding: .6em;
+}
+body>div>main>section article figure>figcaption{ 
+    color: blue;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+/* Cabecera */
+body>div>header{
+    font-family: 'Spectral SC', serif;
+    font-weight: 400;
+    margin-right: 1.5%;
+    margin-left: 10px;
+
+}
+
+/** Titulo Mi sitio */
+body>div>header>div{
+    background-color: lightgrey;
+    padding: 3em 2em;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+body>div>header>div>h1{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+/* Menu */
+body>div>header>nav{ padding: .6em; }
+body>div>header>nav>ul{ list-style: none; }
+body>div>header>nav>ul>li{ padding-top : 1px; }
+body>div>header>nav>ul>li>a{ 
+    color:white;
+    background-color: #335099;
+    text-decoration: none;
+    font-style: italic;
+    padding: 0.5em;
+    display: block;
+ }
+
+
+/* Footer */
+body>div>footer{
+    background-color: rgba(121, 185, 211, 0.267);
+}
+
+body>div>footer>div:first-child{
+    font-size: 1.2em;
+    padding-left: 5px;
+}
+
+/** Copyright */
+body>div>footer>div:last-child{
+    text-align: right;
+}
+
+/** Iconos Social */
+body>div>footer>div>span{
+    background-image: url('../img/social.png');
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+/* Social Twitter */
+body>div>footer>div>span:nth-child(1){
+    background-position: 
+    calc(var(--tam-ancho-social) * 2)
+    var(--tam-alto-social);
+}
+/* Social Tumblr */
+body>div>footer>div>span:nth-child(2){
+    background-position: 
+    calc(var(--tam-ancho-social) * 2)
+    0px;
+}
+/* Social Stackoverflow */
+body>div>footer>div>span:nth-child(3){
+    background-position: 
+    calc(var(--tam-ancho-social))
+    var(--tam-alto-social);
+}
+/* Social Linkedin */
+body>div>footer>div>span:nth-child(4){
+    background-position: 
+    0px
+    var(--tam-alto-social);
+}
+/* Social Gmail */
+body>div>footer>div>span:nth-child(5){
+    background-position: 
+    calc(var(--tam-ancho-social))
+    0px;
+}
+/* Social GitHub */
+body>div>footer>div>span:nth-child(6){
+    background-position: 
+    0px
+    0px;
+}
+
