@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Spectral+SC:400,700');
+
+/** RESET RESET RESET RESET RESET **/
+div, header, main, footer,section, nav, article, figure, h1, h2, h3, h4, h5, h6, ul, li, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** Las imagenes y los iframes no son responsive **/
+img, iframe{
+    width: 100%; 
+    height: auto;
+}
+
+/** COMUN COMUN COMUN COMUN COMUN COMUN COMUN **/
+:root{
+    --tam-ancho-social: -40px;
+    --tam-alto-social: -40px;
+}
+body{
+    font: normal 14px/1.2 'Open Sans', sans-serif;
+    font-weight:400;
+    color : #333;
+}           /* COMUN */
+
+
+
+
+
+
+
+
+
+
+/** DISEÑO DISEÑO DISEÑO DISEÑO DISEÑO **/
+/** DISEÑO DISEÑO DISEÑO DISEÑO DISEÑO **/
+
+
+
+/** HEADER HEADER HEADER HEADER HEADER **/
+body > div > header{
+    font-family: 'Spectral SC', serif;
+}
+body > div > header> div{
+    text-align: center;
+    height: 8em;
+    background-color: lightgrey;
+    line-height: 8em;
+    vertical-align: middle;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}/*^^^^^^^^^^^^^^ HEADER ^^^^^^^^^^^^^^*/
+
+
+
+/** NAV NAV NAV NAV NAV NAV NAV NAV NAV **/
+body > div > header> nav>ul{
+    width: 100%;
+    text-align: center;
+    margin: .5em 0 1em;
+}
+body > div > header> nav>ul>li{
+    display: inline-block;
+}
+body > div > header> nav>ul>li a{
+    text-decoration: none;
+    background-color:  #335099;
+    color:white;
+    padding: 1em;
+    display: inline-block;
+    font-style: italic;
+}/*^^^^^^^^^^^^^^ NAV ^^^^^^^^^^^^^^^^^*/
+
+
+
+/** MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN **/
+
+/** PORTADA PORTADA PORTADA PORTADA PORTADA **/
+body>div>main>figure>figcaption{
+    background-color: #335099;
+    padding: 1em;
+    color: white;
+    font-size: 1.8em;
+    
+}
+/* INFORMACION NO RELEVANTE POR AHORA */
+body>div>main> section:first-of-type,
+body>div>main> section:last-of-type{
+    background-color: lightgray;
+    padding: 1em;
+    margin: 1em 0;
+    font-size: 1.2em;
+    text-align: center;
+    font-style: italic;
+}/** ^^^^^^^^^^^^^^ PORTADA ^^^^^^^^^^^^^^^^ **/
+
+/** IMAGENES IMAGENES IMAGENES IMAGENES IMAGENES **/
+body>div>main> section:nth-of-type(2) article{
+    padding: .5em;
+}
+body>div>main> section:nth-of-type(2)>article > figure>figcaption{
+    color: #335099;
+    font-size: 2em;
+    text-transform: capitalize;
+}/** ^^^^^^^^^^^^^^^^^^ IMAGENES ^^^^^^^^^^^^^^ **/
+
+
+
+
+/** FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER **/
+
+/** COPYRIGHT COPYRIGHT COPYRIGHT COPYRIGHT **/
+body>div>footer>div:first-child{
+    text-align: center;
+}
+/** SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL **/
+body>div>footer>div:last-child{
+    text-align: center;
+}
+body>div>footer{
+    background-color: lightblue;
+    
+}
+body>div>footer>div:first-child p{
+    margin: 0px;
+    padding-top: .9em;
+}
+
+body>div>footer>div:last-child span{
+    background-image: url("./../img/social.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+/* Social Twitter */
+body>div>footer>div>span:nth-child(6){
+    background-position: 
+    calc(var(--tam-ancho-social) * 2)
+    var(--tam-alto-social);
+}
+/* Social Tumblr */
+body>div>footer>div>span:nth-child(5){
+    background-position: 
+    calc(var(--tam-ancho-social) * 2)
+    0px;
+}
+/* Social Stackoverflow */
+body>div>footer>div>span:nth-child(4){
+    background-position: 
+    calc(var(--tam-ancho-social))
+    var(--tam-alto-social);
+}
+/* Social Linkedin */
+body>div>footer>div>span:nth-child(3){
+    background-position: 
+    0px
+    var(--tam-alto-social);
+}
+/* Social Gmail */
+body>div>footer>div>span:nth-child(2){
+    background-position: 
+    calc(var(--tam-ancho-social))
+    0px;
+}
+/* Social GitHub */
+body>div>footer>div>span:nth-child(1){
+    background-position: 
+    0px
+    0px;
+}/** ^^^^^^^^^^^^^^ FOOTER ^^^^^^^^^^^^^^ **/
+
+
+
+/** CORTES CORTES CORTES CORTES CORTES CORTES **/
+@media screen and (min-width:480px){
+
+    
+    /** DISEÑO DISEÑO DISEÑO DISEÑO DISEÑO **/
+    /** DISEÑO DISEÑO DISEÑO DISEÑO DISEÑO **/
+
+    body>div>footer{
+        overflow: hidden;
+    }
+    body>div>footer>div{
+        display: inline-block;
+    }
+
+    body>div>header{
+        margin-bottom: 1em;
+    }
+    body>div>header>div{
+        margin-right: 1em;
+    }
+    
+    body>div>header>nav>ul>li a{
+        height: 0.6em;
+        line-height: 0.6em;
+    }
+    body>div>header>nav{
+        margin-top: 1em;
+    }
+
+
+    /** SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL **/
+    /* Social Twitter */
+    body>div>footer>div>span:nth-child(1){
+        background-position: 
+        calc(var(--tam-ancho-social) * 2)
+        var(--tam-alto-social);
+    }
+    /* Social Tumblr */
+    body>div>footer>div>span:nth-child(2){
+        background-position: 
+        calc(var(--tam-ancho-social) * 2)
+        0px;
+    }
+    /* Social Stackoverflow */
+    body>div>footer>div>span:nth-child(3){
+        background-position: 
+        calc(var(--tam-ancho-social))
+        var(--tam-alto-social);
+    }
+    /* Social Linkedin */
+    body>div>footer>div>span:nth-child(4){
+        background-position: 
+        0px
+        var(--tam-alto-social);
+    }
+    /* Social Gmail */
+    body>div>footer>div>span:nth-child(5){
+        background-position: 
+        calc(var(--tam-ancho-social))
+        0px;
+    }
+    /* Social GitHub */
+    body>div>footer>div>span:nth-child(6){
+        background-position: 
+        0px
+        0px;
+    }/** ^^^^^^^^^^^^^^ FOOTER ^^^^^^^^^^^^^^ **/
+
+    
+    
+    /** DISTRIBUCION DISTRIBUCION DISTRIBUCION **/
+    /** DISTRIBUCION DISTRIBUCION DISTRIBUCION **/
+
+
+    body>div>header>div{
+        display: inline-block;
+        width: 12.5em;
+    }
+    body>div>header>nav{
+        display: inline-block;
+        vertical-align: top;
+    }
+    body > div > main > section:first-of-type + section article:not(:nth-of-type(3n+0)) {
+        display: inline-block;
+        width: 49.2%;
+    }
+
+    body>div>footer>div+div{
+        float: right;
+    }
+    body>div>footer>div{
+        float: left;  
+    }
+}
+@media screen and (min-width: 650px){
+
+    body > div > main > section:first-of-type + section > article {
+        display: inline-block;
+        width: 32.8% !important;
+    }
+}
+@media screen and (min-width:980px){
+    body>div{
+        width: 1024px;
+        margin: 0 auto;
+    }
+    body>div>header,
+    body>div>main{
+        display: inline-block;
+    }
+
+    body>div>main{
+        width: 80%;
+    }
+    
+    body>div>header{
+        width: 19%;
+        vertical-align: top;
+        text-align: center;
+    }
+    body>div>header>nav>ul>li,
+    body>div>header>nav>ul>li a{
+        display: block;
+        text-align: left;
+    }
+    body>div>header>nav>ul>li{
+        border-top: 1px solid white;
+    }
+    body>div>header>nav{
+        width: 100%;
+        padding: 0.5em 1em;;
+        margin: 0px;
+    }
+    body>div>header>div{
+        margin: 0px;
+    }
+    body>div>footer{
+        width:81%;
+        float: right;
+    }
+
+}
