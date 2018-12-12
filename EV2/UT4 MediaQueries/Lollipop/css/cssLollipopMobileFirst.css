@@ -1,0 +1,142 @@
+/*********** RESET *********/
+div, header, main, footer,section, nav, article, 
+figure, h1, h2, h3, h4, h5, h6, ul, li, a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Las imagenes y los iframes no son responsive */
+img, iframe{
+    width: 100%; 
+    height: auto;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2{
+    letter-spacing: -1px;
+}
+
+:root{
+    --espacio-menu:15px;
+}
+
+/** DISEÑO DISEÑO DISEÑO DISEÑO DISEÑO DISEÑO **/
+/** DISEÑO DISEÑO DISEÑO DISEÑO DISEÑO DISEÑO **/
+
+/** HEADER HEADER HEADER HEADER HEADER HEADER **/
+body>div>header>h1,
+body>div>header>div{
+    color: white;
+    text-align: center;
+}
+/** MENU **/
+#menu{
+    display: none;
+}
+
+#menu + label{
+    font-size: 2em;
+}
+
+/* Dejate aconsejar*/
+body>div>header>div>a{
+    display: inline-block;
+    border: 1px solid white;
+    width: 160px;
+    height: 25px;
+    color:white;
+    line-height: 1.5em;
+    margin-bottom: .5em;
+}
+body>div>header>div>a>span{
+    display: none;
+}
+
+/* Diseño lista desplegable */
+#menu + label + ul{
+    position: absolute;
+    display: none;
+    background: #a83535;
+    width: 180px;
+    height: 340px;
+    line-height: 1.6em;
+    padding: 0 9px;
+}
+
+header>nav > #menu + label + ul > li>a{font-weight: bold;}
+
+header>nav > #menu + label + ul > li:hover > a{
+    background-color:  #521a1a ;
+    padding-left: var(--espacio-menu);
+}
+
+/* Primer nivel del menu */
+header>nav > #menu + label + ul > li > a{
+    padding-left: var(--espacio-menu);
+}
+
+/* Segundo nivel del menu */
+header>nav > #menu + label + ul > li > a + ul > li > a {
+    padding-left: calc(var(--espacio-menu) * 1.6);
+}
+
+/* Segundo nivel del menu */
+header>nav > #menu + label + ul > li > a + ul > li > a + ul > li > a {
+    padding-left: calc(var(--espacio-menu) * 2.3);
+}
+/*  */
+header>nav > #menu + label + ul > li  ul li a:hover {
+    background-color:  #521a1a ;
+}
+
+/* Enlaces de la lista */
+#menu + label + ul > li a:visited{color: white;}
+#menu + label + ul > li a:link{color: white;}
+#menu + label + ul > li a{
+    display: inline-block;
+    width: 100%;
+}
+/** H1 **/
+body>div>header>h1{
+    background-color: #a83535;
+    line-height: 1.4em;
+}
+
+/** CONSEJO **/
+body>div>header>div{
+    background: url('./../img/425.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    
+}
+body>div>header>div>h1{
+    font-size: 1.3em;
+}
+
+
+
+
+
+/** DISTRIBUCION DISTRIBUCION DISTRIBUCION DISTRIBUCION **/
+/** DISTRIBUCION DISTRIBUCION DISTRIBUCION DISTRIBUCION **/
+
+/** BOTON MENU **/
+#menu + label{
+    position: absolute;
+    left: 25px;
+    top: 7px;
+}
+
+#menu:checked  ~ ul{
+    display: inherit;
+    position: absolute;
+    left: 20px;
+    top: 45px;
+}
