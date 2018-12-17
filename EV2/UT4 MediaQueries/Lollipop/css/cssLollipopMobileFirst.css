@@ -112,28 +112,72 @@ body>div>header>h1{
 /** CONSEJO **/
 body>div>header>div{
     background: url('./../img/425.jpg');
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
     height: 80px;
     padding-top: 10px;
+    background-size: cover;
+    background-position: center;
+    position: center;
+    background-repeat: no-repeat;
 }
 
 body>div>header>div>h1{
     font-size: 1.3em;
 }
 
-/* Aside */
+/* Aside */ 
+
 /*Lo ultimo - Donde estamos - Chuches por trabajo */
-body > div > section > aside::before{
-    content: url("./../img/icon_star.svg");
+body > div > section:first-of-type > aside{
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    background-position: 20px 0px;
+    color: gray;
+}
+body > div > section:first-of-type > aside:nth-of-type(1){
+    background-image: url("./../img/icon_star.svg");
+}
+body > div > section:first-of-type > aside:nth-of-type(2){
+    background-image: url("./../img/icon_marker.svg");
+}
+body > div > section:first-of-type > aside:nth-of-type(3){
+    background-image: url("./../img/icon_gear.svg");
 }
 
-body > div > section > aside > div{
-    width: 70vw;
-    float: right;
+body > div > section:first-of-type > aside{
+    font-weight: 500;
+    padding-left: 6em;
+    margin-bottom: 1em;
 }
-    
+body > div > section:first-of-type > aside  p > a{
+    text-decoration: underline;
+}
+
+/* Creaciones modernas */
+
+body > div > section:nth-of-type(2){
+    background-color: rgb(197, 124, 63);
+}
+
+body > div > section:nth-of-type(2)>article{
+    background-image: url('./../img/sabores.jpg');
+    background-size: 400px;
+    background-position: 30px 40px;
+    background-repeat: no-repeat;
+    padding: 15em 2em 2em 2em;
+    border-right: solid 2em rgb(197, 124, 63);
+    color: white;
+}
+
+body > div > section:nth-of-type(2)>article>p{
+    line-height: 1.45em;
+    margin-bottom: 1em;
+}
+body > div > section:nth-of-type(2)>article>p+a{
+    border: 1px solid;
+    padding: .4em .5em;
+    color: white;
+}
+
 
 /** DISTRIBUCION DISTRIBUCION DISTRIBUCION DISTRIBUCION **/
 /** DISTRIBUCION DISTRIBUCION DISTRIBUCION DISTRIBUCION **/
