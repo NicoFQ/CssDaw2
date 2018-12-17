@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+	<meta charset='utf-8'/>
+	<title>Demo Responsive</title>
+	
+	<meta name="viewport" content="width=device-width, user-escalable=yes">
+	<style>
+		.contenedor *{
+            width: 100%;
+            max-width: 1200px;
+            box-sizing: border-box;
+        }
+        .fila::before{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .fila::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        [class|='col']{
+            float: left;
+            min-height: 6px;
+            padding: 6px;
+        }
+        .col-1{ width: 8.33334%; }
+        .col-2{ width: 16.66667%; }
+        .col-3{ width: 25.00000%; }
+        .col-4{ width: 33.33334%; }
+        .col-5{ width: 41.66667%; }
+        .col-6{ width: 50.00000%; }
+        .col-7{ width: 58.33334%; }
+        .col-8{ width: 66.66667%; }
+        .col-9{ width: 75.00000%; }
+        .col-10{ width: 83.33334%; }
+        .col-11{ width: 91.66667%; }
+        .col-12{ width: 100.00000%; }
+	</style>
+</head>
+<body>
+<!-- Contenedor general -->
+<div  class='contenedor'>
+	<!-- Cabecera -->
+	<header class='fila'>
+		<div class='col-3'>
+			<h1>Mi sitio</h1>
+		</div>
+		<nav class='col-9'>
+			<ul class="fila">
+				<li class='col-3'><a href="#">Flores</a></li>
+				<li class='col-3'><a href="#">Arbustos</a></li>
+				<li class='col-3'><a href="#">Árboles</a></li>
+				<li class='col-3'><a href="#">Vegetales</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- Contenido -->
+	<main class='fila'>		
+		<figure class='col-12'>
+			<img src="img/bosque.jpg" alt="bosque">
+			<figcaption>Dentro del bosque - Lorem Ipsum</figcaption>
+		</figure>
+
+		<section class='col-12'>
+			 Información no relevante. Por ahora
+		</section>
+
+		<section class='col-12'>
+			<div class="fila">
+
+				<article class='col-4'>
+					<figure>
+						<img src="img/01.jpg" alt="pajaro">
+						<figcaption>Un artículo</figcaption>
+					</figure>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</article>
+				<article class='col-4'>
+					<figure>
+						<img src="img/02.jpg" alt="pajaro">
+						<figcaption>Otro artículo</figcaption>
+					</figure>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</article>
+				<article class='col-4'>
+					<figure>
+						<img src="img/03.jpg" alt="pajaro">
+						<figcaption>Otro más</figcaption>
+					</figure>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<section class='col-12'>
+			 Información no relevante. Por ahora
+		</section>
+	</main>
+
+	<footer class='fila'>
+		<div class='col-6'><p>Copyright &copy; DAW-2</p></div>
+		<div class='col-6'>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+    <style>
+        .contenedor *{
+            width: 100%;
+            max-width: 1200px;
+            box-sizing: border-box;
+        }
+        .fila::before{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .fila::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        [class|='col']{
+            float: left;
+            min-height: 6px;
+            padding: 6px;
+        }
+        .col-1{ width: 8.33334%; }
+        .col-2{ width: 16.66667%; }
+        .col-3{ width: 25.00000%; }
+        .col-4{ width: 33.33334%; }
+        .col-5{ width: 41.66667%; }
+        .col-6{ width: 50.00000%; }
+        .col-7{ width: 58.33334%; }
+        .col-8{ width: 66.66667%; }
+        .col-9{ width: 75.00000%; }
+        .col-10{ width: 83.33334%; }
+        .col-11{ width: 91.66667%; }
+        .col-12{ width: 100.00000%; }
+
+        .fila{
+            outline: 1px solid tomato;
+        }
+        [class|='col']{
+            border: 1px solid silver;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="fila">
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+            <div class="col-1"></div>
+        </div>
+
+        <div class="fila">
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-6"></div>
+        </div>
+
+        <div class="fila">
+           <div class="col-2"></div>
+           <div class="col-8"></div>
+           <div class="col-2"></div>
+        </div>
+
+        <div class="fila">
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+        </div>
+
+        <div class="fila">
+            <div class="col-12"></div>
+        </div>
+    </div>
+</body>
+</html>
