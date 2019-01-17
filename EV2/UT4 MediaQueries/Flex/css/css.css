@@ -1,0 +1,40 @@
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+
+h2 {text-align: center;}
+
+body>div {
+  border: 1px solid #333;
+  padding: 3px;
+  background-color: #DDD;
+  margin: 40px auto;
+  counter-reset: divs;
+  font-size: 40px;
+  font-weight: bold;  
+}
+
+div>div {
+  text-align: center;
+  color: #FFF;
+  padding: 10px 20px;
+}
+
+
+div > div:nth-child(1) { background-color: #FF5722; }
+div > div:nth-child(2) { background-color: #9C27B0; }
+div > div:nth-child(3) { background-color: #2196F3; }
+div > div:nth-child(4) { background-color: #5AB963; }
+div > div:nth-child(5) { background-color: #616161; }
+div > div:nth-child(1) { background-color: #FF5722; }
+div > div:nth-child(2) { background-color: #9C27B0; }
+div > div:nth-child(3) { background-color: #2196F3; }
+div > div:nth-child(4) { background-color: #5AB963; }
+div > div:nth-child(5) { background-color: #616161; }
+div > div:nth-child(6) { background-color: #FF5722; }
+div > div:nth-child(7) { background-color: #9C27B0; }
+div > div:nth-child(8) { background-color: #2196F3; }
+div > div:nth-child(9) { background-color: #5AB963; }
+div > div:nth-child(10) { background-color: #616161;}
+
+div > div:before {content: counter(divs); counter-increment: divs;}
