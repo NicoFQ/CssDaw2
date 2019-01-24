@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Columnas</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main{           
+            display: flex;
+            flex: 1;
+        }
+        section{
+            flex:1; /* 1 1 0  Por defecto*/
+            order: 1;
+            flex-direction: column;
+        }
+        nav{ background-color: darkcyan; }
+        aside{ background-color: darkgoldenrod }
+        header, footer{ background-color: tomato;}
+        section { background-color: navajowhite }
+        nav, aside, section, header, footer{ padding: 10px; }
+        @media (min-width: 480px){
+            main{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+            section{
+                flex-basis: 100%;
+            }
+            nav, aside{
+                flex: 1 0 0;
+            }
+        }
+
+        @media (min-width: 768px){
+            section{ flex: 4; }
+            aside{ flex: 2; order: 1;}
+        }
+        
+</style>
+</head>
+<body>
+    <div>
+        <header>Header</header>
+        <main>
+            <section>Seccion</section>
+            <nav>Nav</nav>
+            <aside>Aside</aside>
+        </main>
+        <footer>Pie</footer>
+    </div>
+</body>
+</html>
