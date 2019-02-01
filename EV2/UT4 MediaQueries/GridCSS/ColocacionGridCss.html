@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            font-style: system-ui;
+            font-size: 1.3em;
+            margin: 3em;
+        }
+
+        main {
+            display: grid;
+            grid-template-rows: repeat(3, 7em); /* Crea tres filas de 7em de altura. */
+            grid-template-areas: 
+            '. cabecera cabecera .'
+            'lateral . . navegacion'
+            '. contenido pie .';
+        }
+
+        div{
+            background-color: burlywood; 
+            border-radius: 5px;
+        }
+
+        body > main> div:nth-child(1){
+            grid-column: cabecera / cabecera;
+            grid-row: cabecera;
+            background-color: bisque; 
+        }
+
+        body > main> div:nth-child(2){
+            grid-column: lateral / lateral;
+            grid-row: lateral;
+            background-color: brown; 
+        }
+
+        body > main> div:nth-child(3){
+            grid-column: contenido / contenido;
+            grid-row: contenido;
+            background-color: darksalmon; 
+        }
+
+        body > main> div:nth-child(4){
+            grid-column: navegacion / navegacion;
+            grid-row: navegacion;
+            background-color: firebrick; 
+        }
+
+        body > main> div:nth-child(5){
+            grid-column: pie / pie;
+            grid-row: pie;
+            background-color: sienna; 
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(2, auto);
+        }
+        li{
+            list-style: none;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>  
+            <ul>
+                <li>0</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+        <div>Lateral</div>
+        <div>Contenido</div>
+        <div></div>
+        <div>Pie</div>
+    </main>
+</body>
+</html>
