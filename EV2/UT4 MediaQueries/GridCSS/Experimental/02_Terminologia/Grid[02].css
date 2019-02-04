@@ -1,0 +1,36 @@
+main{
+    height: 100vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 100px 100px 100px 100px; /* repeat(4,100px) */
+    grid-template-rows: 100px 100px 100px;
+
+}
+
+
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+@media (max-width:600px){
+
+    
+    div:nth-child(10){
+        background-color: royalblue;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-column: 3 / 5;
+    }
+    
+    div:nth-child(6){
+        background-color: slategray;
+        grid-column: 2 / 3;
+        grid-row: span 2; /* Equivalencia => 2 / 4 */
+        /** span 2 => equivale a cunatas celdas se va a 
+        *             extender el elemento */
+        
+    }
+}

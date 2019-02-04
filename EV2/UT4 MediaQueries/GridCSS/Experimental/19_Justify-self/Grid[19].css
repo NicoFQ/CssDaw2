@@ -1,0 +1,22 @@
+main{
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template: 
+        /*\ Filas \*/    /*\ Columnas \*/
+        repeat(4,50px) / repeat(3,  1fr);
+        justify-items: stretch; /* Alinea en el eje horizontal */
+        
+    }
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+
+div:nth-child(5){
+    background-color: silver;
+    justify-self: center; /* Alinea un unico elemento horizontalmente */
+}

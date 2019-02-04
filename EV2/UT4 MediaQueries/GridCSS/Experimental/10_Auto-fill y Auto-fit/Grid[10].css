@@ -1,0 +1,37 @@
+section{
+    display: grid;
+    grid-gap: 10px;
+    font-family: sans-serif;
+    margin: 20px 0;
+    grid-template-columns: 
+        [start]
+        repeat(4,
+            [col-lg-start] minmax(80px, 1fr)
+            [col-lg-end col-md-start] minmax(40px, 1fr)
+            [col-md-end col-sm-start] minmax(20px, 1fr)
+        )
+        [end];
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+.auto-fill div{
+    background-color: goldenrod;
+}
+
+.auto-fit div{
+    background-color: gray;
+}
+.auto-fill{
+    /* 4 col de 100px min 1 fr de max */
+    /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+.auto-fit{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}

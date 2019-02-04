@@ -1,0 +1,56 @@
+main{
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    font-family: sans-serif;
+
+    /* Especificacion de areas en el template */
+    grid-template-areas: 
+    'header'
+    'contenido'
+    'izquierda'
+    'derecha'
+    'footer';
+}
+
+main > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+
+@media (min-width: 500px){
+    main{
+        grid-template-areas: 
+        'header     header      derecha'
+        'izquierda  contenido   derecha'
+        'izquierda     footer      derecha';
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 2fr 5fr 1fr;
+        
+    }
+    
+}
+
+
+
+header{
+    grid-area: header;
+}
+
+aside:first-of-type{
+    grid-area: izquierda;
+}
+
+article{
+    grid-area: contenido;
+}
+
+aside:last-of-type{
+    grid-area: derecha;
+}
+
+footer{
+    grid-area: footer;
+}
