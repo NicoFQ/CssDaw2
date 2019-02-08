@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        * { box-sizing: border-box; }
+        
+        body{
+            font-family: 'Times New Roman', serif;
+            color: #444;
+            margin-top: 50px;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        main > *{
+            background-color: #444;
+            color: white;
+            padding: 20px;
+            font-size: 100%;
+        }
+
+        header{ background-color: #bada55; }
+    
+        aside{ background-color: papayawhip; }
+        footer{ background-color: darkred; }
+        nav{
+            background-color: peru;
+        }
+        div{ background-color: gainsboro; }
+        @media (min-width: 40em){
+            main{
+                display: grid;
+                grid-template-columns: repeat(12, 1fr) ;
+                /* grid-template-rows: repeat(4, 1fr); */
+                grid-gap: 3px;
+                grid-template-areas: 
+                    'header header header header header header header header header header header header '
+                    'nav nav nav informacion informacion informacion informacion informacion lateral lateral add add';
+            }
+            aside, div {
+                grid-column: span 6;
+            }
+            header{ grid-area: header; }
+            nav{ grid-area: nav; }
+            section{ grid-area: informacion; }
+            footer { grid-column: 1 / -1; }
+        }
+        @media (min-width: 60em){
+            aside{ grid-area: lateral; }            
+            div { grid-area: add; }
+            grid-template-areas: 
+                    'header header header header header header header header header header header header '
+                    'nav nav nav informacion informacion informacion informacion informacion lateral lateral add add';
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>Cabecera</header>
+        <nav>Navegaccion</nav>
+        <section>
+            <h2>Informacón</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga possimus at voluptatem unde. Consequatur repellendus molestias excepturi vitae laudantium natus. Cum cupiditate vero alias ipsa tempore, modi magnam voluptates quaerat.</p>
+        </section>
+        <aside>Lateral</aside>
+        <div>Anuncio</div>
+        <footer>
+            Pie
+        </footer>
+    </main>
+    
+</body>
+</html>

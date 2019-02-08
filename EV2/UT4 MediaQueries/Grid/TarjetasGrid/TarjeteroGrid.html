@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    *{ box-sizing: border-box;   }
+
+body{
+    font-family: system-ui;
+    font-size: .9rem;
+}
+
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+button{
+    background-color: white;
+    border: 1px solid;
+    color: #5588d5;
+    border-radius: 4px;
+    line-height: 2rem;
+    margin: 0.5;
+    cursor: pointer;
+}
+
+/* .tarjetero{
+    width: 80%;
+    margin: 0 auto;
+} */
+
+.tarjeta{
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.31)
+}
+
+.tarjeta  h2{
+    text-align: center;
+}
+
+.tarjeta > article{
+    padding: 0 .8rem .8rem;
+}
+
+.tarjeta.noenlace{
+    pointer-events: none;
+}
+
+/* DISTRIBUCION */
+.tarjetero{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+}
+
+.tarjeta .contenido{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.tarjeta{
+    flex: 1 0 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta article{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.land{
+    flex-direction: row;
+    flex-basis: 550px;
+}
+.inicio{
+    order: -1;
+}
+.doble{
+    grid-column: span 2;
+}
+        
+    </style>
+</head>
+<body>
+    <main>
+
+            <main class="tarjetero">
+                    <a class="tarjeta noenlace" href="">
+                        <img src="https://picsum.photos/300?image=100" alt="">
+        
+                            <h2>Tarjeta con enlace</h2>
+                            <article>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                              </article>
+                            <button>Boton</button>
+                    </a>  
+                    <a class="tarjeta doble" href="">
+                        <img src="https://picsum.photos/300?image=100" alt="">
+                        <h2>Tarjeta con enlace</h2>
+                        <article>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                        </article>
+                        <button>Boton</button>
+                    </a>  
+                    <a class="tarjeta" href="">
+                        <img src="https://picsum.photos/300?image=100" alt="">
+                        <h2>Tarjeta con enlace</h2>
+                        <article>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                        </article>
+                        <button>Boton</button>
+                    </a>  
+                 
+                    <a class="tarjeta" href="">
+                        <img src="https://picsum.photos/300?image=100" alt="">
+                        <h2>Tarjeta con enlace</h2>
+                        <article>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                        </article>
+                        <button>Boton</button>
+                    </a>  
+                    <a class="tarjeta" href="">
+                        <img src="https://picsum.photos/300?image=100" alt="">
+                        <h2>Tarjeta con enlace</h2>
+                        <article>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                        </article>
+                        <button>Boton</button>
+                    </a>  
+                    <a class="tarjeta" href="">
+                        <img src="https://picsum.photos/300?image=100" alt="">
+                        <h2>Tarjeta con enlace</h2>
+                        <article>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                        </article>
+                        <button>Boton</button>
+                    </a>  
+                    <main class="tarjetero">
+                            <a class="tarjeta noenlace" href="">
+                                <img src="https://picsum.photos/300?image=100" alt="">
+                
+                                    <h2>Tarjeta con enlace</h2>
+                                    <article>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                                      </article>
+                                    <button>Boton</button>
+                            </a>  
+                            <a class="tarjeta" href="">
+                                <img src="https://picsum.photos/300?image=100" alt="">
+                                <h2>Tarjeta con enlace</h2>
+                                <article>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                                </article>
+                                <button>Boton</button>
+                            </a>  
+                            <a class="tarjeta" href="">
+                                <img src="https://picsum.photos/300?image=100" alt="">
+                                <h2>Tarjeta con enlace</h2>
+                                <article>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                                </article>
+                                <button>Boton</button>
+                            </a>  
+                            <a class="tarjeta land" href="">
+                                <img src="https://picsum.photos/300?image=100" alt="">
+                                <div class="contenido inicio">
+                                    <h2>Tarjeta con enlace</h2>
+                                    <article>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                                    </article>
+                                    <button>Boton</button>
+                                </div>
+                            </a>  
+                            <a class="tarjeta" href="">
+                                <img src="https://picsum.photos/300?image=100" alt="">
+                                <h2>Tarjeta con enlace</h2>
+                                <article>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                                </article>
+                                <button>Boton</button>
+                            </a>  
+                            <a class="tarjeta" href="">
+                                <img src="https://picsum.photos/300?image=100" alt="">
+                                <h2>Tarjeta con enlace</h2>
+                                <article>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                                </article>
+                                <button>Boton</button>
+                            </a>  
+                            <a class="tarjeta" href="">
+                                <img src="https://picsum.photos/300?image=100" alt="">
+                                <h2>Tarjeta con enlace</h2>
+                                <article>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi modi totam. Fugit nemo id expedita quasi iusto quo esse. Officiis eos quidem optio earum veritatis eaque eveniet placeat praesentium.</p>
+                                </article>
+                                <button>Boton</button>
+                            </a>  
+                    </main>
+            </main>
+
+    </main class="tarjetero">
+    </body>
+    </html>
