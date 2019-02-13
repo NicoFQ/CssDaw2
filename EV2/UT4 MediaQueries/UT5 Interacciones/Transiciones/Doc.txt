@@ -1,0 +1,6 @@
+   -webkit-transition
+-webkit-transform
+=> webkit se pone para que el comportamiento de las 
+    transiciones se comporten de forma que se comportaba antiguamente
+    no para que webkit lo soporte.
+ 

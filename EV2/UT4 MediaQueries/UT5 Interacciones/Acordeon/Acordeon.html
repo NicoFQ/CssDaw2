@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        main{
+            margin: 4em auto;
+            font-size: 1.2em;
+        }
+
+        ol{
+            counter-reset: elemento;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        ol li{
+            counter-increment: elemento;
+            position: relative;
+            margin-left: 2em;
+              padding-left: 4em;
+            height: 2em;
+        }
+
+        ol li:nth-child(odd){
+            transform: skewX(15deg);
+            background-color: brown;
+        }
+        ol li:nth-child(even){
+            transform: skewX(-15deg);
+            background-color: tomato;
+        }
+         
+         
+        ol li::before{
+            display: block;
+            content: '§ ' counter(elemento);
+            transform: translateX(-5.5em) rotate(-90deg);
+            position: absolute;
+            
+            /* transform: translate(100px,100px); */
+        }
+
+    
+    </style>
+</head>
+<body>
+    <ol>
+        <li>this</li>
+        <li>with</li>
+        <li>for-in</li>
+        <li>eval</li>
+        <li>DOM</li>
+        <li>option explicit</li>
+    </ol>
+</body>
+</html>

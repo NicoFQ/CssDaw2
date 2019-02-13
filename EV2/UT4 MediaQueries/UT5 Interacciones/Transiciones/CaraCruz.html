@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI';
+            font-size: 4rem;
+            line-height: 140px;
+            perspective: 100px;
+        }
+        .contenedor{
+            position: relative;
+            transform-style: preserve-3d;
+            outline: 1px dotted black;
+            width: 400px;
+            height: 260px;
+            /* transform: scale(400%, 200%); */
+            cursor: pointer;
+            user-select: none;
+            margin: 2em auto;
+            transform: rotate(0deg);
+            transition: transform 300ms;
+        }
+        .cara, .cruz {
+            position: absolute;
+            left: 0; right: 0; left: 0; bottom: 0;
+            background-image: linear-gradient(royalblue, royalblue);
+            text-align: center;
+        }
+
+        
+        .cara {
+            background-image: linear-gradient(royalblue, royalblue);
+        }
+        .cruz {
+            background-image: linear-gradient(tomato, tomato);
+            transform: rotateY(-180deg);
+            backface-visibility: hidden;
+        }   
+        .contenedor.girar{
+            transform: rotateY(180deg);
+            
+        }
+
+    
+    </style>
+</head>
+<body>
+    <main class=contenedor>
+        <div class=cara><h1>CARA</h1></div>
+        <div class=cruz><h1>CRUZ</h1></div>
+    </main>
+    <script>
+    
+        document.querySelector('.contenedor').addEventListener('click', (e)=>{
+            e.currentTarget.classList.toggle('girar');
+        });
+    
+    </script>
+</body>
+</html>
