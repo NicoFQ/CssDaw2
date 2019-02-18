@@ -1,0 +1,92 @@
+/*▼▼▼▼▼▼▼▼▼▼▼▼ APARIENCIA ▼▼▼▼▼▼▼▼▼▼▼▼*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Raleway;
+}
+main{
+    width: 550px;
+    margin: 0 auto;
+    background-color: rgb(142, 170, 240);
+    padding: 2em;
+}
+ul{
+    list-style: none;
+    background-color: white;
+    border-radius: 4px;
+    padding: 1em;
+}
+main > ul > li > div:first-child{
+    border: 1px solid #818181;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 1.5em;
+    height: 89px;
+} 
+
+main > ul > li > div:first-child img{
+    border-radius: 50%;
+    width: 80px;
+    margin-top: 5%;
+    margin-right: 3px;
+    margin-left: 3px;
+} 
+main > ul > li{
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid lightgray;
+}
+main > ul > li:last-child{
+    margin-bottom: 1em;
+    padding-bottom: 0em;
+    border-bottom: 0px solid;
+}
+main > ul > li:first-child{
+    margin-top: 1em;
+}
+main > ul  li>div:nth-child(2) > h4{
+    margin-top: .4em;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+main > ul  li>div:nth-child(2) > *{
+    line-height: 1.44em;
+}
+main > ul > li>div:nth-child(2) > h4 ~ *{
+    background-image: url('iconos.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    padding-left: 2em;
+    color: gray;
+}
+
+main > ul > li>div:nth-child(2) > p:first-of-type{
+    background-position-y: -58px;
+}
+
+main > ul > li>div:nth-child(2) > p:nth-of-type(2){
+    background-position-y: -32px;
+}
+
+main > ul > li>div:nth-child(2) > p:nth-of-type(3){
+    background-position-y: -85px;
+}
+
+
+
+
+
+/*▼▼▼▼▼▼▼▼▼▼▼▼ DISPOSICION ▼▼▼▼▼▼▼▼▼▼▼▼*/
+main > ul > li {
+    display: flex;
+} 
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 
+

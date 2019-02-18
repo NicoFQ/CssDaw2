@@ -1,0 +1,41 @@
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: lightgray;
+}
+
+.contenedor{
+    margin: 20px;
+    border:20px solid white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+div[class*="item-"]{
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    border:2px solid gray;
+    flex: 1;
+}
+
+div[class*="item-"]:nth-child(odd){
+    background-color: black;
+    color:white;
+    
+
+
+}
