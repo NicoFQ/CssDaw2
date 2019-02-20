@@ -1,0 +1,558 @@
+/* Diseño lista desplegable */
+#menu + label + ul{
+    position: absolute;
+    display: none;
+    background: #a83535;
+    width: 180px;
+    height: 340px;
+    line-height: 1.6em;
+    padding: 0 9px;
+}
+#menu, label{
+    display: none;
+}
+/*********************/
+h1,h2,h3,h4,h5,h6,p,body,html{
+    padding: 0;
+    margin: 0;
+}
+a:visited, a:link{
+    text-decoration: none;
+}
+
+@import url(http://allfont.es/allfont.css?fonts=arial-narrow);
+
+body{
+    font-family: 'Arial Narrow';
+}
+/* HEADER HEADER HEADER HEADER HEADER*/
+body > div > header{
+    color: white;
+    text-align: center;
+}
+
+body > div > header > h1{
+    line-height: 1.4em;
+    background-color: darkred;
+}
+body > div > header > div{
+    background-color: salmon;
+    padding: 1em 0em;
+}
+
+/* Añade valor con sabores naturales */
+body > div > header > div > h1{
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+/* Déjate aconsejar */
+body > div > header > div > a{
+    color: inherit;
+    border: 1px solid;
+    padding: .2em 2em;
+    
+}
+/* por nosotros */
+body > div > header > div > a > span{
+    display: none;
+}
+/*  SECTION SECTION SECTION SECTION */
+body > div > header + section > aside h3 > a{
+    color: black;
+}
+body > div > header + section > aside{
+    padding-left: 6em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+body > div > header + section > aside > div > p > a:link{
+    text-decoration: underline;
+}
+
+/* ESTRELLA LOCALZACION Y PIÑON */
+body > div > header + section > aside:nth-child(1){
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/icon_star.svg');
+    background-position-x: 40px;
+}
+body > div > header + section > aside:nth-child(2){
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/icon_marker.svg');
+    background-position-x: 40px;
+}
+body > div > header + section > aside:nth-child(3){
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-image: url('./../../img/icon_gear.svg');
+    background-position-x: 40px;
+}
+
+/* Creaciones modernas, sin azucar añadido */
+body > div > header + section + section{
+    background-color: chocolate;
+    padding: 1.9em;
+    color: white;
+}
+body > div > header + section + section> article{
+    padding-top: 10.5em;
+    background-image: url("./../../img/sabores.jpg");
+    background-repeat: no-repeat;
+    background-size: 300px  140px;
+}
+body > div > header + section + section> article a{
+    color: inherit;
+    border: 1px solid;
+    padding: .5em .5em;
+}
+
+body > div > header + section + section> article p{
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+
+/* SEGUNDO SECTION SEGUNDO SECTION SEGUNDO SECTION */
+body > div > header + section + section + section{
+    padding: 1.3em 1.3em 0em 1.3em;
+    background-color: antiquewhite;
+}
+
+/* Con fruta natural */
+
+    /* Saber mas... */
+body > div > header + section + section + section > aside > div a,body > div > header + section + section + section > aside > div a:link{
+    color: brown;
+    text-decoration: underline;
+    font-weight: bold;
+    line-height: 3.5em;
+    display: block;
+    margin-bottom: 1em;
+}
+body > div > header + section + section + section > aside > div > h4{
+    margin-top: 1.5em;
+    margin-bottom: .3em;
+}
+
+body > div > header + section + section + section > aside > div > img{
+    width: 65vw;
+}
+body > div > header + section + section + section > aside > div > p{
+    line-height: 1.5em;
+}
+
+/* BLOCKQUOTE BLOCKQUOTE BLOCKQUOTE BLOCKQUOTE */
+body > div > header + section + section + section > aside + blockquote{
+    background-color: white;
+    display: block;
+    width: 90%;
+    margin: 0em auto;
+    padding-bottom: 3em;
+}
+
+body > div > header + section + section + section > aside + blockquote p{
+    font-size: 1.5em;
+    padding: 2em 2em 0em 2em;
+}
+body > div > header + section + section + section > aside + blockquote p:first-of-type::before{
+    content: '"';
+    font-size: 3em;
+    position: absolute;    
+    left: 50px;
+    color: olive;
+}
+
+body > div > header + section + section + section > aside + blockquote p:nth-of-type(2){
+    font-size: 1em;
+    padding-left: 4em;
+}
+
+body > div > header + section + section + section > aside + blockquote p:nth-of-type(2)::before{
+    content: '--';
+    font-size: 1em;
+    position: absolute;    
+    left: 50px;
+    color: olive;
+    padding-left: 1.9em;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+footer{
+    padding: 3.5em 2em .4em 2em;
+    
+}
+footer > div{
+    display: flex;
+    flex-direction: column;
+}
+footer > div a:link{
+    color: blue;
+    text-decoration: underline;
+}
+footer > div a:first-child{
+    margin-top: .4em;
+}
+footer > div a:last-child{
+    margin-top: 1em;
+}
+/* =================================================== */
+/* =================================================== */
+/* =================================================== */
+@media (min-width: 26.5em){
+    /* Añade valor con sabores naturales */
+    body > div > header > div{
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* dejate aconsejar */
+    body > div > header > div > a{
+        font-size: 1.1em;        
+    }
+    /* por nosotros */
+    body > div > header > div > a > span{
+        display: inline;
+    }
+
+    /* Con fruta natural */
+    /* Saber mas... */
+    body > div > header + section + section + section > aside > div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* border: 1px solid red; */
+        height: 160px;
+    }
+    
+    body > div > header + section + section + section > aside > div > img{
+        width: 180px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        margin-right: 1em;
+        flex: 0 1 auto;
+    }
+
+    body > div > header + section + section + section > aside > div > h4{
+        margin-top: 0px;
+        margin-bottom: .3em;
+        
+    }
+    
+    body > div > header + section + section + section > aside > div > p{
+        width: 190px;
+    }
+
+    body > div > header + section + section + section > aside > div > a:link{
+        line-height: 1.5em;
+        display: inline-block;
+        margin-bottom: 0em;
+        margin-top: 10px;
+        width: 100px; 
+        align-self: flex-end;
+    }
+}
+/* =================================================== */
+/* =================================================== */
+/* =================================================== */
+@media (min-width:40.5em){
+    /* Diseño lista desplegable */
+    #menu + label + ul{
+        position: relative; 
+        display: flex;
+        background: transparent;
+        width: auto;
+        height: auto;
+        line-height: inherit;
+        padding: auto;
+        list-style: none;
+        margin: 0;
+    }
+    header > nav > #menu + label + ul > li:hover{
+        background-color: brown;
+    }
+    header > nav > #menu + label + ul > li:hover > ul{
+        display: block;
+        position: absolute;
+        top: 35px;
+        text-align: left;
+        width: 110px;
+    }
+    /* SUBMENU SUBMENU SUBMENU SUBMENU SUBMENU*/
+    header > nav > #menu + label + ul > li:hover > ul > li{
+        width: 100%;
+    }
+    header > nav > #menu + label + ul > li:hover > ul > li > a{
+        display: block;
+        width: 100%;
+        background-color: black;
+        line-height: 1.4em;
+        padding-left: 15px;
+    }
+    
+    header > nav > #menu + label + ul > li > ul{
+        list-style: none;
+        /* border: 1px solid; */
+        padding-left: 0px;
+        display: none;
+    }
+    
+    /* MENU DOBLE MENU DOBLE MENU DOBLE MENU DOBLE */
+    body > div > header > nav > ul > li:nth-child(2) > ul > li:nth-child(3) ul {
+        display: none;
+    }
+    body > div > header > nav > ul > li:nth-child(2) > ul > li:nth-child(3) > li:hover + ul{
+        display: block;
+        position: relative;
+        left: 20px;
+        top: -10px;
+        /* border: 1px solid white; */
+        padding: 0;
+    }
+
+    body > div > header > nav > ul > li:nth-child(2) > ul > li:nth-child(3) > a + ul a{
+        display: block;
+        width: 100%;
+        background-color: black;
+        line-height: 1.4em;
+        padding-left: 15px;
+    }
+
+    body > div > header > nav > ul > li:nth-child(2) > ul > li:nth-child(3)  *{
+        border: 1px solid white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    header > nav > #menu + label + ul > li > a{
+        display: block;
+        padding-bottom: 1em;
+        padding: 0 17px 17px ;
+        z-index: 10;
+    }
+    header > nav > #menu + label + ul > li > a::before{
+        content: '▼';
+        position: absolute;
+        top: 15px;
+        
+        transform: scaleY(0.5);
+    }
+    
+    header > nav > #menu + label + ul > li:last-of-type > a::before{
+        content: '';
+    }
+    header > nav > #menu + label + ul a{
+        color: white;
+    }
+
+    
+    body > div > header{
+         display: flex;
+         flex-direction: column;
+         background-image: url('./../../img/825.jpg');
+         background-repeat: no-repeat;
+         background-size: 100%;
+         height: 240px;
+        }
+
+    body > div > header > h1:first-child{
+        position: absolute;
+        top: 10px;
+        left: 14px;
+        background-color: transparent;
+    }
+    body > div > header > nav{
+        display: flex;
+        align-items: flex-end;
+        order: -1;
+        height: 90px;
+        background: rgba(1,104,104,0.2);
+    }
+
+    /* AÑADE VALOR CON SABORES NATURALES */
+    body > div > header > div{
+        background-color: transparent;
+        align-items: flex-end;
+        width: 220px;
+        align-self: flex-end;
+        text-align: left;
+        justify-content: stretch;
+    }
+    body > div > header > div h1{
+         font-size: 1.6em;
+    }
+    body > div > header > div a{
+        padding-left: .35em;
+        padding-right: .35em;
+        align-self: flex-start;
+    }
+    /* LO ULTIMO DONDE ESTAMOS CHUCHES POR TRABAJO */
+    body > div > section:nth-child(2){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    body > div > header + section:nth-child(2) > aside{
+        padding: 0px;
+        text-align: center;
+        background-position-x: 50%;
+        flex: 0 1 170px;
+    }
+
+    body > div > section:nth-child(2) > aside > div{
+        padding-top: 3em;
+    }
+    body > div > section:nth-child(2) > aside > div h3{
+        margin-bottom: .6em;
+        font-weight: bold;
+    }
+
+    /* Creaciones modernas, sin azucar añadido */
+    body > div > section:nth-child(3) > article{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0em;
+        padding-left: 20em;
+    }
+    body > div > section:nth-child(3) > article p{
+        margin-top: .6em;
+        line-height: 1.2rem;
+    }
+    body > div > section:nth-child(3) > article p +a{
+        align-self: flex-start;
+        padding: .2em 1em
+    }
+
+
+    /* CON FRUTA NATURAL */
+    body > div > section:nth-child(4){
+        display: flex;
+        /* border: 3px solid; */
+    }
+
+    body > div > section:nth-child(4) > aside{
+        flex: 1 0 20%;
+    }
+
+    /* Con fruta natural */
+    /* Saber mas... */
+    body > div > header + section + section + section > aside > div {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    body > div > header + section + section + section > aside > div > p{
+        width: 95%;
+    }
+
+    body > div > header + section + section + section > aside > div > a:link{
+        line-height: 1.5em;
+        display: inline-block;
+        margin-bottom: 0em;
+        margin-top: auto;
+        margin-bottom: 2em;
+        width: 100px; 
+        align-self: flex-start;
+    }
+
+
+    /* BLOCKQUOTE BLOCKQUOTE BLOCKQUOTE BLOCKQUOTE */
+body > div > header + section + section + section > aside + blockquote{
+    background-color: white;
+    margin-top: 30px;
+    width: 28vw;
+    
+}
+
+body > div > header + section + section + section > aside + blockquote p{
+    font-size: 1.2rem;
+    padding: 1.3em 1.5em 0em 2.2em;
+}
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+footer{
+    padding: 2em;
+    padding-left: 2.5em;
+    padding-top: 2.5em;
+    vertical-align: middle;
+    height: 30px;
+}
+footer > div{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 60%;
+    left: 120px;
+    bottom: 20px;
+}
+body > div > footer a:last-child{
+    margin: 0;
+}
+body > div > footer a:first-child{
+    margin: 0;
+}
+body > div > footer a{
+    padding-right: 4em;
+    color: blue;
+}
+/* =================================================== */
+/* =================================================== */
+/* =================================================== */
+@media (min-width: 60.5em){
+
+    body > div > header{
+        display: flex;
+        flex-direction: column;
+        background-image: url('./../../img/1200.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 345px;
+       }
+       /* AÑADE VALOR CON SABORES NATURALES */
+    body > div > header > div{
+        background-color: transparent;
+        align-items: flex-end;
+        width: 300px;
+        align-self: flex-end;
+        text-align: left;
+        justify-content: stretch;
+        margin-right: 2em;
+    }
+    body > div > header > div h1{
+         font-size: 2.5em;
+    }
+    body > div > header > div a{
+        padding-left: .35em;
+        padding-right: .35em;
+        align-self: flex-start;
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
