@@ -1,0 +1,848 @@
+/* @import url(http://allfont.es/allfont.css?fonts=arial-narrow); */
+body{
+    font-family: 'Arial Narrow', 'Arial';
+    /* font-size: 1.1em; */
+    /* font-weight: 600; */
+    
+}
+
+/* Diseño lista desplegable */
+#menu + label + ul{
+    position: absolute;
+    display: none;
+    background: #a83535;
+    width: 180px;
+    height: 340px;
+    line-height: 1.6em;
+    padding: 0 9px;
+}
+#menu, label{
+    display: none;
+}
+
+/*********************/
+h1,h2,h3,h4,h5,h6,p,body,html,ul,a{
+    padding: 0;
+    margin: 0;
+}
+a:visited, a:link{
+    text-decoration: none;
+}
+
+
+
+/**********************************/
+/* UNDALIA UNDALIA UNDALIA UNDALIA */
+body > div > header > h1:first-child{
+    text-align: center;
+    background-color: rgba(0, 30, 10, 0.4);
+    line-height: 1.5em;
+    /* height: 50px; */
+    color: white;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+
+
+/**********************************/
+/* HEADER HEADER HEADER HEADER HEADER HEADER */
+body > div > header{
+    color: white;
+    background-image: url('./../../img/425.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+    padding-top: 3.5em;
+    height: 75px;
+}
+/* Añade valor con sabores naturales */
+body > div > header > div > h1{
+  font-size: 1.3em;  
+  margin-bottom: .5em;
+}
+
+/* Déjate aconsejar */
+body > div > header > div > a{
+    color: white;
+    padding: .3em 1.8em;
+    border: 1px solid;
+  }
+
+ /* por nosotros */ 
+ body > div > header > div > a span{
+     display: none;
+ }
+
+
+
+
+
+/**********************************/
+/* Lo último  Dónde estamos Chuches por trabajo*/
+body > div > section:nth-child(2) > aside{
+    padding-top: 1em;
+    padding-left: 6.5em;
+}
+body > div > section:nth-child(2)> aside a{
+    color: black;
+}
+
+/* Morbi commodo */
+body > div > section:nth-child(2)> aside:nth-child(1) p a{
+    text-decoration: underline;
+}
+
+body > div > section:nth-child(2) > aside:nth-child(1){
+    background-image: url('./../../img/icon_star.svg');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-x: 40px; 
+    background-position-y: 15px;
+}
+
+
+body > div > section:nth-child(2) > aside:nth-child(2){
+    background-image: url('./../../img/icon_marker.svg');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-x: 40px; 
+    background-position-y: 15px;
+}
+
+body > div > section:nth-child(2) > aside:nth-child(3){
+    background-image: url('./../../img/icon_gear.svg');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-x: 40px; 
+    background-position-y: 15px;
+}
+
+
+
+
+/**********************************/
+/* Creaciones modernas, sin azucar añadido */
+
+body > div > section:nth-child(3){
+    padding: 2em;
+    padding-top: 2.5em;
+    background-color: chocolate;
+    color:white;
+    padding-top: 12em;
+    background-image: url('./../../img/sabores.jpg');
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position-x: 2em;
+    background-position-y: 2em;
+}
+
+/* SABER MAS ESTILO */
+body > div > section:nth-child(3) > article a{
+    color:white;
+    border: 1px solid;
+    padding: .3em .8em;
+}
+/* SABER MAS ESTILO */
+body > div > section:nth-child(3) > article a{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+/******************************************/
+/* Con fruta natural */
+body > div > section:nth-child(4){
+    padding: 1.2em;
+    padding-bottom: 0em;
+    background-color: antiquewhite;
+}
+
+/* IMG IMG IMG IMG IMG IMG IMG IMG IMG */
+body > div > section:nth-child(4) img{
+    width: 170px;
+    margin-bottom: 1.1em;
+}
+
+/* SABER MAS SABER MAS SABER MAS SABER MAS */
+body > div > section:nth-child(4) a{
+    font-weight: bold;
+    color: brown;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+
+
+/* BLOCKQUOTE BLOCKQUOTE BLOCKQUOTE BLOCKQUOTE */
+body > div > section:nth-child(4) > blockquote > p{
+    background-color: white;
+    padding: 2em;
+    padding-bottom: 1.5em;
+    padding-left: 2.5em;
+    font-size: 1.2em;
+    position: relative;
+    font-style: italic;
+}
+
+
+/* COMILLA COMILLA COMILLA COMILLA COMILLA COMILLA */
+body > div > section:nth-child(4) > blockquote > p:first-child::before{
+    content: '"';
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: green;
+    font-size: 5em;
+}
+/* CLIENTE CLIENTE CLIENTE CLIENTE CLIENTE */
+body > div > section:nth-child(4) > blockquote > p:last-child{
+    padding-top: 0em;
+    padding-left: 3.5em;
+}
+/* COMILLA COMILLA COMILLA COMILLA COMILLA COMILLA */
+body > div > section:nth-child(4) > blockquote > p:last-child::before{
+    content: '--';
+    position: absolute;
+    left: 46px;
+    top: -9px;
+    color: green;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+/*********************************************/
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+body > div > footer {
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+body > div > footer > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr ;
+    align-items: center;
+}
+
+body > div > footer > div > a:link {
+    line-height: 1.5em;
+    color: blue;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+@media (min-width:26.5em){
+/**********************************/
+/* HEADER HEADER HEADER HEADER */
+    body > div > header{
+        color: white;
+        background-image: url('./../../img/640.jpg');
+        background-repeat: no-repeat;
+        background-position: left;
+        /* background-size: 100%; */
+        text-align: center;
+        padding-top: 4.2em;
+        height: 100px;
+    }
+    /* Añade valor con sabores naturales */
+    body > div > header > div > h1{
+        font-size: 1.3em;  
+        margin-bottom: 1.2em;
+    }
+  
+  /* Déjate aconsejar */
+  body > div > header > div > a{
+      color: white;
+      padding: .25em 2.8em;
+      border: 1px solid;
+    }
+     /* por nosotros */ 
+    body > div > header > div > a span{
+    display: inline;
+    }   
+
+
+
+
+
+
+
+    /**********************************/
+    /* Con fruta natural */
+    body > div > section:nth-child(4) > aside > div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        'img h4'
+        'img p'
+        'img a'
+    }
+    /* IMG IMG IMG IMG IMG IMG IMG IMG IMG */
+    body > div > section:nth-child(4) img{
+        margin-right: 1em;
+        margin-top: .7em;
+    }
+    /*  */
+    body > div > section:nth-child(4) > aside > div > img{
+        grid-area: img;
+        justify-self: center;
+    }
+    body > div > section:nth-child(4) > aside > div > h4{
+        grid-area: h4;
+    }
+    body > div > section:nth-child(4) > aside > div > p{
+        grid-area: p;
+    }
+    body > div > section:nth-child(4) > aside > div > a{
+        grid-area: a;
+        justify-self: flex-end;
+        margin-top: 1em;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+@media (min-width:40.5em){
+    /* HEADER HEADER HEADER HEADER */
+    body > div > header{
+        background-image: url('./../../img/825.jpg');
+        height: 200px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+
+    /*****************************/
+    /* UNDALIA UNDALIA UNDALIA UNDALIA */
+body > div > header > h1:first-child{
+    text-align: left;
+    height: 90px;
+    /* padding-left: .5em; */
+    padding-top: .5em;
+    font-size: 2.3em;
+}
+body > div > header > h1:first-child::before{
+    content: '';
+    padding-left: .5em;
+}
+
+
+/* Diseño lista desplegable */
+/* GENERAL LI A */
+ul, ul a{
+    list-style: none;
+    color: white;
+}
+
+#menu + label + ul{
+    position: absolute;
+    background: transparent;
+    width: auto;
+    height: auto;
+    line-height: auto;
+    padding: auto;
+    display: grid;
+    text-align: left;
+    left: 10px;
+    top: 67px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#menu + label + ul > li{
+    margin-right: 5px;
+    position: relative;
+    /*text-align: center;*/
+}
+
+#menu + label + ul > li:hover{
+    background-color: brown;
+}
+/* Nosotros Tus ideas Productos Contacta */
+#menu + label + ul > li > a{
+    display: block;
+    width: 100%;
+    /*line-height: 3em;*/
+    padding: .5em .8em;
+}
+
+
+
+/* SUB SUB SUB SUB SUB SUB */
+
+#menu + label + ul > li:hover > ul{
+    display:block;
+    position: absolute;
+}
+
+
+#menu + label + ul > li ul{
+    width: 120px;
+    display: none;
+}
+#menu + label + ul > li li a{
+    background-color: brown;
+    display: block;
+    padding-left: 1.1em;
+}
+
+#menu + label + ul > li li a:hover{
+    background: black;
+}
+
+html > body > div > header > nav > ul > li:nth-child(2) > ul > li:last-child > a + ul{
+    /*display: none !important;*/
+}
+
+/* SUB LINK 3 SUB LINK 3 SUB LINK 3 SUB LINK 3 SUB LINK 3 */
+
+body > div > header > nav > ul > li:nth-child(2) > ul > li:nth-child(3) > a:hover + ul{
+    border: 1px solid;    
+    display: block !important;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+/***************************************/
+   /* Añade valor con sabores naturales */
+      /* */
+    body > div > header > div{
+        grid-area: 1 / 2 / 1 /3;
+        align-self: center;
+        justify-self: end;
+        text-align: left;
+        padding-left: 2em;
+    }
+    body > div > header > div > h1{
+        font-size: 1.7em;  
+        margin-bottom: .6em;
+        margin-top: .4em;
+    }
+
+  
+    /* Déjate aconsejar */
+    body > div > header > div > a{
+      color: white;
+      padding: .25em .7em;
+      border: 1px solid;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /**********************************/
+/* Lo último  Dónde estamos Chuches por trabajo*/
+body > div > section:nth-child(2){
+    padding-top: 1em;
+    padding-left: 0em;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, minmax(100px, 26%));
+    justify-content: space-around;
+}
+
+body > div > section:nth-child(2) > aside{
+    padding-top: 3.5em;
+    padding-left: 0em;
+    text-align: center;
+}
+
+body > div > section:nth-child(2)> aside p{
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+}
+
+/* Morbi commodo */
+body > div > section:nth-child(2)> aside:nth-child(1) p a{
+    text-decoration: underline;
+}
+
+body > div > section:nth-child(2) > aside:nth-child(1){
+    background-image: url('./../../img/icon_star.svg');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-x: 50%; 
+    background-position-y: 5px;
+    grid-area: 1 / 1 / 1 / 2;
+}
+
+
+body > div > section:nth-child(2) > aside:nth-child(2){
+    background-image: url('./../../img/icon_marker.svg');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-x: 50%; 
+    background-position-y: 5px;
+    grid-area: 1 / 2 / 1 / 3;
+}
+
+body > div > section:nth-child(2) > aside:nth-child(3){
+    background-image: url('./../../img/icon_gear.svg');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-x: 50%; 
+    background-position-y: 5px;
+    grid-area: 1 / 3 / 1 / 4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************/
+/* Creaciones modernas, sin azucar añadido */
+
+body > div > section:nth-child(3){
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 0px;
+}
+body > div > section:nth-child(3) > article{
+    margin-top: 1.5em;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************/
+/* Con fruta natural */
+body > div > section:nth-child(4){
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, minmax(10%, 1fr));
+    justify-content: space-between;
+}
+
+    /* SUB-GRID SUB-GRID SUB-GRID SUB-GRID */
+  /**********************************/
+ /* Con fruta natural */
+    body > div > section:nth-child(4) > aside > div{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        'img'
+        'h4'
+        'p'
+        'a'
+    }
+    /* IMG IMG IMG IMG IMG IMG IMG IMG IMG */
+    body > div > section:nth-child(4) img{
+        margin-left:.5em;
+        margin-top: 0em;
+    }
+
+    body > div > section:nth-child(4) > aside > div > img{
+        grid-area: img;
+        justify-self: start;
+    }
+    body > div > section:nth-child(4) > aside > div > h4{
+        grid-area: h4;
+    }
+    body > div > section:nth-child(4) > aside > div > p{
+        grid-area: p;
+        padding-right: 1em;
+    }
+    body > div > section:nth-child(4) > aside > div > a{
+        grid-area: a;
+        justify-self: start;
+        margin-top: 1em;
+    }
+
+    /* BLOCKQUOTE BLOCKQUOTE BLOCKQUOTE BLOCKQUOTE */
+    body > div > section:nth-child(4) > blockquote{
+        padding: .7em;
+        padding-bottom: 0em;
+        padding-top: 1.7em;
+        margin: 0;
+    }
+     body > div > section:nth-child(4) > blockquote p{
+        padding-bottom: 1.5em;
+    }
+
+
+
+
+
+
+    /*********************************************/
+    /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+    body > div > footer {
+        padding-top: 2em;
+        padding-left: 2em;
+    }
+
+    body > div > footer > div {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(20%, 30%)) ;
+        grid-template-rows: 1fr;
+        align-items: center;
+        position: relative;
+        top: -22px;
+        left: 110px;
+        width: 50%;
+    }
+
+    body > div > footer > div > a:link {
+        line-height: 1.5em;
+        color: blue;
+        text-decoration: underline;
+    }
+}
+
+
+
+
+
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+/* ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} ()=>{} */
+@media (min-width:60.5em){
+
+    /* HEADER HEADER HEADER HEADER */
+    body > div > header{
+        background-image: url('./../../img/1200.jpg');
+        height: 300px;
+    }
+
+    
+        /*****************************/
+        /* UNDALIA UNDALIA UNDALIA UNDALIA */
+    body > div > header > h1:first-child{
+        text-align: left;
+        height: 90px;
+        /* padding-left: .5em; */
+        padding-top: .5em;
+        font-size: 2.3em;
+    }
+    
+    /***************************************/
+       /* Añade valor con sabores naturales */
+          /* */
+        body > div > header > div{
+            grid-area: 1 / 2 / 1 /3;
+            align-self: center;
+            justify-self: end;
+            text-align: left;
+            padding-left: 5em;
+        }
+        body > div > header > div > h1{
+            font-size: 2em;  
+            margin-bottom: .6em;
+            margin-top: -2.5em;
+            width: 80%;
+        }
+    
+      
+        /* Déjate aconsejar */
+        body > div > header > div > a{
+          color: white;
+          padding: .25em .7em;
+          border: 1px solid;
+        }
+    
+    
+    
+    
+    
+
+
+
+
+    body > div > section:nth-child(3){
+        background-size: 350px;
+        height: 200px;
+        grid-template-columns: 1fr 1.3fr;
+    }
+}
