@@ -1,0 +1,70 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+ 
+/*body > div{
+	width: 480px;
+	min-width: 480px;
+	max-width: 480px;
+}
+
+body > div img{
+	width: 480px;
+
+
+}
+*/
+body > div> header {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template- rows: auto;
+	grid-template-areas: 
+	'misitio nav';
+}
+
+
+
+/* MI SITIO MI SITIO MI SITIO MI SITIO */
+body > div> header > div {
+	background-color: silver;
+	height: 130px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	grid-area: misitio;
+}
+
+body > div> header > nav > ul{
+	grid-area: nav;
+ }
+
+
+/* MENU MENU MENU MENU MENU MENU MENU */
+body > div> header > nav > ul{
+	display:flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: .5em;
+}
+body > div> header > nav > ul li{
+	flex: 0 1 24%;
+	padding: .3em;
+	background-color: silver;
+
+}
+body > div> header > nav > ul li a{
+	display: block;
+	width: 100%;
+	}
+ul{
+	list-style: none;
+}
+
+/*  Dentro del bosque - Lorem Ipsum */
+
+body > div> main > figure{
+	font-size: 1.5em;
+	height: 100%;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Galería</title>
+	<style>
+		main{
+			display: grid;
+			grid-template-columns: repeat(auto-fill, 100px);
+			grid-auto-columns: 100px;
+			grid-auto-rows: 100px;
+			grid-auto-rows: 100px;
+			grid-auto-flow: dense;
+		}
+
+		.h2{grid-column: span 2;}
+		.h3{grid-column: span 3;}
+		.h4{grid-column: span 4;}
+
+		.v2{grid-row: span 2;}
+		.v3{grid-row: span 3;}
+		.v4{grid-row: span 4;}
+
+		img{
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			grid-column: 1 / -1;
+			grid-row: 1 / -1;
+		}
+		div{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+		}
+
+	</style>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<main></main>
+	<script>
+		function generarHTML([h,v]){
+			return `
+             <div class="h${h} v${v}">
+              <img src="https://picsum.photos/400/400?image=${numAleatorio(50)}">
+             </div>
+			`;
+		}
+
+		function numAleatorio(num){
+			return Math.floor(Math.random() * num) + 1;
+		}
+
+		const elementos = Array.from({length:50}, () => [numAleatorio(4), numAleatorio(4)].concat([[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1],[1,1]]));
+
+		const html = elementos.map(generarHTML).join('');
+		document.querySelector('main').innerHTML = html;
+
+
+
+	</script>
+</body>
+</html>

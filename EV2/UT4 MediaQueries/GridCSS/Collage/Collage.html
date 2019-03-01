@@ -43,8 +43,8 @@
     
         function generarHTML([h,v]) {
             return `
-                <div class="h${h} v${v}">
-                    <img src="https://picsum.photos/300/300?image=${numAleatorio(50)}">
+                <div class='h${h} v${v}'>
+                    //<img src="https://picsum.photos/300/300?image=${numAleatorio(50)}">
                 <div>
             `;
         }
@@ -53,9 +53,14 @@
             return Math.floor(Math.random() * num) + 1;
         }
 
-        const elementos = Array.from({length:10}, () => [numAleatorio(4), numAleatorio(4)].concat([[1,1],[1,1],[1,1],[1,1]]));
+        const elementos = Array.from({length:10}, () => [numAleatorio(4), numAleatorio(4)].concat([1,1],[1,1],[1,1],[1,1]));
+
+
+
+
+
         console.log(elementos);
-        const html = elementos.map(generarHTML).join('');
+        //const html = elementos.map(generarHTML).join('');
         document.querySelector('main').innerHTML = html;
     </script>
 </body>

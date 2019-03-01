@@ -1,0 +1,207 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:'mont';
+}
+
+label,footer{ background-color: #fdc702;}
+nav {  background-color: #2a2a2a; }
+section > section { background-color: #00a7ff;}
+footer {color: #696664;}
+
+/*by alumno*/
+/*MENU*/
+
+
+input{
+	display: none;
+}
+
+input#menu ~ nav{
+	display: none;
+}
+input#menu:checked ~ nav{
+	display: flex;
+	flex-direction: column;
+}
+
+/*fin menu*************/
+nav{
+	display: flex;
+	justify-content: space-around;
+}
+nav>a{
+	justify-content: center;
+	text-decoration: none;
+	color: white;
+	border-bottom: dashed white 2px;
+	text-align: center;
+	opacity: 0.3;
+}
+
+header{
+	background-image:	url('../imagenes/ladrillos.jpg');
+
+}
+
+header>h1{
+	padding: 10px;
+}
+
+
+p,a{
+	font-size: 1em;
+}
+section{
+	text-align: center;		
+}
+section>section{
+	font-size: 0.8em;
+}
+
+section>article{
+	font-size: 0.7em;
+	padding-bottom: 15px;
+	display: flex;
+}
+
+section>article:first-child{
+	flex: 1 1 100%;
+	flex-direction: column;
+}
+article:first-child h3, article:last-child h3{
+	flex: 1 1 100%;
+}
+section>article:first-child figure{
+	order: 1;
+	width: 100%;
+}
+
+section>article:first-child p{
+	order:2;
+}
+
+article:nth-child(2){
+	flex: 1 1 100%;
+	border-top: solid white 10px;
+	border-bottom: solid white 10px;
+	flex-wrap: wrap;
+}
+article:nth-child(2) h3{
+	flex: 1 1 50%;
+}
+
+article:nth-child(2) p{
+	flex: 1 1 66.66%;
+}
+
+article:nth-child(2) figure{
+	flex: 1 1 33.33%;
+}
+
+article:last-child {
+	flex-wrap: wrap;	
+}
+article:last-child figure{
+	order: 1;
+	flex: 1 1 33.33%;	
+}
+article:last-child p{
+	order: 2;
+	flex: 1 1 66.66%;	
+}
+
+
+
+/*  */
+/**FOOTER*/
+footer{
+	text-align: center;
+}
+footer > p{
+	padding: 10px;
+}
+footer span:before{
+	content: "alumno";
+}
+
+figure>img{
+	width: 100%;
+	height: auto;
+}
+
+
+/*EXTRAS*/
+h1,h3,nav>a{
+	font-family:'beba';
+}
+
+header>h1{
+	text-shadow:-2px 2px 3px #3F51B5 ;
+}
+label{
+	text-shadow: 1px 1px 20px #E91E63;
+	cursor: pointer;
+}
+nav a:hover{	
+	        transform: scale(1.2);
+	        transition: all 300ms ease-in;
+}
+
+
+
+section > section{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+}
+
+
+
+
+/*fuentes*/
+@font-face {
+	font-family:'mont';
+	src: url('../fuentes/montserrat-light-webfont.woff');
+}
+@font-face {
+	font-family:'beba';
+	src: url('../fuentes/BebasNeue Regular.woff');
+}
+
+/************ MEDIAS ***********/
+
+
+@media (min-width: 28.5em) {	
+	input#menu ~ nav{flex-direction:row;}
+	input#menu:checked ~ nav{flex-direction:row}
+}
+
+@media (min-width: 40.5em) {
+	section>article{
+		font-size: 1em;	
+	}
+}
+
+
+@media (min-width: 60.5em) {
+	main{
+		width:61em;
+		margin:0 auto;
+	}
+	article:first-child{
+		flex:1 1 330px;
+		flex-direction:column;
+	}
+    article:nth-child(2){
+    flex:1 1 50%;
+	flex-direction:row;
+	border:none;
+}
+	
+article:first-child, article:nth-child(2){
+	border-bottom:10px solid white;
+	}
+}
+
